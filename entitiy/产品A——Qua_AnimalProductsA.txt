@@ -1,0 +1,133 @@
+﻿09	public int FGlid { get; set; }
+        /// <summary>
+        /// 编号
+        /// </summary>
+        public string PNumber { get; set; }
+        /// <summary>
+        /// 货主
+        /// </summary>
+        public string PCargoOwner { get; set; }
+        /// <summary>
+        /// 联系电话
+        /// </summary>
+        public string PPhone { get; set; }
+        /// <summary>
+        /// 产品名称
+        /// </summary>
+        public string PName { get; set; }
+        /// <summary>
+        /// 数量
+        /// </summary>
+        public decimal PQuantity { get; set; }
+        /// <summary>
+        /// 生产单位名称
+        /// </summary>
+        public string PUnitName { get; set; }
+        /// <summary>
+        /// 生产单位地址
+        /// </summary>
+        public string PProductionunit { get; set; }
+        /// <summary>
+        /// 省
+        /// </summary>
+        public string PSheng { get; set; }
+        /// <summary>
+        /// 市（州）
+        /// </summary>
+        public string PShi { get; set; }
+        /// <summary>
+        /// 县（市、区）
+        /// </summary>
+        public string PXian { get; set; }
+        /// <summary>
+        /// 承运人
+        /// </summary>
+        public string PCarrier { get; set; }
+        /// <summary>
+        /// 联系电话
+        /// </summary>
+        public string PPhoneCyr { get; set; }
+        /// <summary>
+        /// 运载工具牌号
+        /// </summary>
+        public string PTrademark { get; set; }
+        /// <summary>
+        /// 装运前消毒方式
+        /// </summary>
+        public string PDisinfection { get; set; }
+        /// <summary>
+        /// 有效到达日
+        /// </summary>
+        public int PYouXiaoRi { get; set; }
+        /// <summary>
+        /// 官方兽医签字
+        /// </summary>
+        public string PVeterinary { get; set; }
+        /// <summary>
+        /// 监督所联系电话
+        /// </summary>
+        public string PDwPhone { get; set; }
+        /// <summary>
+        /// 单位：只 个 头
+        /// </summary>
+        public string PDanWei { get; set; }
+        /// <summary>
+        /// 运载方式
+        /// </summary>
+        public string PYunZai { get; set; }
+        /// <summary>
+        /// 签发日期
+        /// </summary>
+        public DateTime DateQF { get; set; }
+        /// <summary>
+        /// 0未打印 1打印  默认为0
+        /// </summary>
+        public string IsPrant { get; set; }
+        /// <summary>
+        /// 保存自增ID[1、离线开证 ；2、手机端（产地检疫）； 3、手机端（屠宰检疫）；4、电脑端（产地检疫）；5、电脑端（屠宰检疫）；6、电脑端（拆证）；7、电脑端（合证）]
+        /// </summary>
+        public int SaveId { get; set; }
+        /// <summary>
+        /// 保存县区市后 详细地点  目的地这四个框
+        /// </summary>
+        public string PDiDian { get; set; }
+        /// <summary>
+        /// 上传标识符:0未上传,1已上传
+        /// </summary>
+        public int UploadType { get; set; }
+        /// <summary>
+        /// 上传标识符:0未上传,1已上传（区分省上传记录）
+        /// </summary>
+        public int UploadTypeSheng { get; set; }
+        /// <summary>
+        /// 备注
+        /// </summary>
+        public string PMemo1 { get; set; }
+        /// <summary>
+        /// 拼接目的地
+        /// </summary>
+        public string PMemo2 { get; set; }
+        /// <summary>
+        /// 保存 县/市/区    这个不要
+        /// </summary>
+        public string PMemo3 { get; set; }
+        /// <summary>
+        ///拼接生产单位地址
+        /// </summary>
+        public string PMemo4 { get; set; }
+        /// <summary>
+        ///启运省
+        /// </summary>
+        public string PQySheng { get; set; }
+        /// <summary>
+        ///启运市
+        /// </summary>
+        public string PQyShi { get; set; }
+        /// <summary>
+        ///启运县
+        /// </summary>
+        public string PQyXian { get; set; }
+
+        public string PNameOne { get; set; }
+        public string PNameTwo { get; set; }
+        public string PNameThree { get; set; }

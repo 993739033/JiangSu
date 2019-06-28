@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F0F0F0"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:outlineProvider="bounds"
+        android:elevation="4dp"
+        android:transitionGroup="false">
+        <!--SearchViewTheme-->
+        <View
+            android:id="@+id/search_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/titleBarBg" />
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:searchIcon="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:iconifiedByDefault="false"
+            android:transitionGroup="true" />
+
+        <ImageButton
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/menu_back_selector"
+            />
+        <!-- wrapping layout needed for the touch ripple -->
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/results_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?android:actionBarSize"
+        android:background="#ff333333"
+        android:elevation="4dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff333333" />
+
+        <com.wyw.jiangsu.view.springview.widget.SpringView
+            android:id="@+id/springView"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/background"
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </com.wyw.jiangsu.view.springview.widget.SpringView>
+
+        <RelativeLayout
+            android:id="@+id/view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:text="没有数据" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>

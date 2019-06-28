@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="15dip"
+        android:text="标题"
+        android:textColor="#232323"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/tv_yulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="15dip"
+        android:text="下载预览"
+        android:textColor="#232323"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tv_dayin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="15dip"
+        android:text="打印"
+        android:textColor="#232323"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

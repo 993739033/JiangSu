@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000" />
+
+        <com.wyw.jiangsu.view.FullPhotoView
+            android:id="@+id/parent_photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    >
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_q"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q"
+                            android:drawablePadding="3dp"
+                            android:text="养殖场\n(户)名称" />
+
+
+                        <EditText
+                            android:id="@+id/tv_name"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_7"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/origin" />
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_7"
+                            android:text="地址" />
+
+                        <TextView
+                            android:id="@+id/tv_addr"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_5"
+                            android:drawablePadding="12dp"
+                            android:drawableRight="@drawable/go_focus"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_2"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/animal_species" />
+
+                        <TextView
+                            android:id="@+id/tv_q_2"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_2"
+                            android:drawablePadding="3dp"
+                            android:text="场所类型" />
+
+
+                        <EditText
+                            android:id="@+id/tv_type"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q_2"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_3"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/quantity_unit" />
+
+                        <TextView
+                            android:id="@+id/tv_q_3"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_3"
+                            android:drawablePadding="3dp"
+                            android:text="现存栏量" />
+
+
+                        <EditText
+                            android:id="@+id/et_number"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q_3"
+                            android:layout_toLeftOf="@+id/tv_unit"
+                            android:focusable="false"
+                            android:inputType="number" />
+
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_4"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_q_4"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_4"
+                            android:drawablePadding="3dp"
+                            android:text="姓名" />
+
+
+                        <EditText
+                            android:id="@+id/name"
+                            style="@style/EditText_style_relayout"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_q_4"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_5"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/card_number" />
+
+                        <TextView
+                            android:id="@+id/tv_q_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_5"
+                            android:drawablePadding="3dp"
+                            android:text="身份证号" />
+
+
+                        <EditText
+                            android:id="@+id/tv_idCrad"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_q_5"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_6"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/card" />
+
+                        <TextView
+                            android:id="@+id/tv_q_6"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_6"
+                            android:drawablePadding="3dp"
+                            android:text="一卡通号" />
+
+
+                        <EditText
+                            android:id="@+id/tv_icCrad"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_q_6"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_16"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time" />
+
+                        <TextView
+                            android:id="@+id/tv_15"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_16"
+                            android:text="申报时间"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_15"
+                            android:drawableRight="@drawable/choose_time_focus"
+                            android:gravity="right|center" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_take_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                   >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dcdcdc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:gravity="center"
+                            android:text="身份证和一卡通号照片"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_takephoto_ic_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:onClick="takePhoto"
+                            android:src="@drawable/take_pictures" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.wyw.jiangsu.view.FullPhotoView
+                                android:id="@+id/photo_view_group_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="198dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:background="#f7f7f7"
+                                android:minHeight="170dp"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/iv_none"
+                                android:layout_width="33dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone"
+                                android:background="@drawable/none" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_anim_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                 />
+
+                <LinearLayout
+                    style="@+id/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_22"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/ear_label" />
+
+                        <TextView
+                            android:id="@+id/tv_22"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_22"
+                            android:text="病死畜禽耳标号" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_dead_erbiao"
+                        style="@style/StyleTextExr"
+                        android:gravity="top|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="24dp"
+                        android:focusable="false"
+                        android:minHeight="160dp"
+                        android:padding="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/handling"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:id="@+id/tv_sw"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/img_2"
+                            android:text="处理方式" />
+
+                        <TextView
+                            android:id="@+id/tv_process_method"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/drop_down_focus"
+                            android:gravity="right|center"
+                             />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <LinearLayout
+                        android:id="@+id/lin_kyfs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            style="@style/Layout_style"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+                            <ImageView
+                                android:id="@+id/img_10"
+                                style="@style/Image_style_relayout"
+                                android:src="@drawable/assigned" />
+
+                            <TextView
+                                android:id="@+id/tv_10"
+                                style="@style/TextView_style_relayout"
+                                android:layout_toRightOf="@+id/img_10"
+                                android:text="勘验方式" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            style="@style/Layout_style"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="15dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_survey_sm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:drawableLeft="@drawable/radiobutton_selector"
+                                    android:drawablePadding="2dp"
+                                    android:text="上门勘验" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_survey_sjd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="36dp"
+                                    android:button="@null"
+                                    android:drawableLeft="@drawable/radiobutton_selector"
+                                    android:drawablePadding="2dp"
+                                    android:text="收集点勘验" />
+
+                            </RadioGroup>
+                        </RelativeLayout>
+                        <View style="@style/Line_style" />
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_9"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/assigned" />
+
+                        <TextView
+                            android:id="@+id/tv_7"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_9"
+                            android:text="监管兽医指派" />
+
+                        <ImageView
+                            android:id="@+id/img_r"
+                            android:layout_centerVertical="true"
+                            android:layout_width="6dp"
+                            android:layout_height="7dp"
+                            android:layout_marginBottom="26dp"
+                            android:layout_marginRight="88dp"
+                            android:layout_marginTop="28dp"
+                            android:layout_toRightOf="@+id/tv_7"
+                            android:src="@drawable/required" />
+
+                        <TextView
+                            android:layout_marginLeft="50dp"
+                            android:layout_toRightOf="@id/tv_7"
+                            android:id="@+id/spinner_assign"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:text="请选择"
+                            android:drawableRight="@drawable/drop_down_drawable"
+                            android:gravity="right|center"
+                           />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_time"
+                        android:visibility="gone"
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_11"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time1" />
+
+                        <TextView
+                            android:id="@+id/tv_11"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_11"
+                            android:text="移送时间" />
+
+
+                        <TextView
+                            android:id="@+id/time_ys"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:hint="点击选择时间"
+                            android:gravity="right|center"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_shouyiqianming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_style"
+                        android:minHeight="40dp"
+                        android:text="官方兽医签字"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_zhanzhang"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/base"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/img_18"
+                        android:text="带"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/tv_17"
+                        android:background="@drawable/required" />
+
+                    <TextView
+                        android:id="@+id/tv_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="14dp"
+                        android:text="为必填项"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/harmless_btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="31dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="确定"
+                    android:textColor="#fffefe"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

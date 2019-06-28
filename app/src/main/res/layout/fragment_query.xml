@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <com.wyw.jiangsu.view.CustomSwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.wyw.jiangsu.view.CustomSwipeRefreshLayout>
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingBottom="@dimen/common_padding_bottom"-->
+        <!--android:paddingLeft="@dimen/common_padding_left"-->
+        <!--android:paddingRight="@dimen/common_padding_right"-->
+        <!--android:paddingTop="@dimen/common_padding_top">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/anim_a_query"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="动物A查询" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/animal_b_query"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="动物B查询" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/production_a_query"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="产品A查询" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/production_b_query"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="产品B查询" />-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="检疫处理通知单"-->
+                <!--android:id="@+id/quarantine_process_notif1"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/animal_quarantine"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="动物检疫申报单" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/animal_quarantine_dispose"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="动物检疫申报单处理" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/animal_origin"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="动物产地工作记录单" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/animal_origin_label"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="乳用、种用动物工作记录单" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/embryo_origin_label"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="种蛋、胚胎、精液检疫工作记录单" />-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/farm_declare"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="养殖场（户）申报" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/agency_declare"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="代理申报" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/declare_news_accept"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="申报消息接收" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/verification_loca"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="现场核查" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/collection_point"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="收集点" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/collection_transport"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="收集运输" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/entrance_ensure"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="入场确认" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/concentrate_dispose"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:NoDealWithInfoBean="集中处理" />-->
+        <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+</FrameLayout>

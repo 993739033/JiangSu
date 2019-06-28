@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditText_style"
+                android:id="@+id/tv_anim_type"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:layout_marginRight="20dp"
+                />
+
+            <EditText
+                style="@style/EditText_style"
+                android:id="@+id/tv_deadth"
+                android:layout_weight="1"
+                android:focusable="false"
+                />
+
+
+            <EditText
+                style="@style/EditText_style"
+                android:id="@+id/et_weight"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:hint="重量"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>

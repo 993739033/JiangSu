@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_margin="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="签名"
+        style="@style/TextView_style"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/bule"
+        />
+
+    <FrameLayout
+        android:id="@+id/tablet_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="@android:color/white">
+        
+    </FrameLayout>
+
+    <View
+        style="@style/Line_style"
+        android:layout_margin="0dp"
+      />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:drawable/bottom_bar"
+         >
+
+        <TextView
+            style="@style/TextView_style"
+            android:id="@+id/tablet_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:clickable="true"
+            android:background="@drawable/layout_select"
+            android:layout_margin="0dp"
+            android:textSize="15sp"
+            />
+
+        <View
+            style="@style/Line_style"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_margin="0dp"
+      />
+
+        <TextView
+            style="@style/TextView_style"
+            android:id="@+id/tablet_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="清除"
+            android:clickable="true"
+            android:background="@drawable/layout_select"
+            android:layout_margin="0dp"
+            android:textSize="15sp"
+            />
+
+        <View
+            style="@style/Line_style"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_margin="0dp"
+            />
+        <TextView
+            style="@style/TextView_style"
+            android:id="@+id/tablet_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_select"
+            android:clickable="true"
+            android:text="取消"
+            android:layout_margin="0dp"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">苏动e通</string>
+    <string name="click_ZoomIn">点击放大</string>
+    <string name="click_takePhoto">点击拍照</string>
+    <string name="filter_vcode">0123456789X</string>
+    <!--<string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>-->
+
+    <string name="transition_search_back" translatable="false">transition_search_back</string>
+    <string name="transition_shot" translatable="false">shot</string>
+    <string name="transition_shot_background" translatable="false">shot_background</string>
+    <string name="search_hint">请输入养殖场(户)名</string>
+
+    <array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+    <array name="process_method1">
+        <item>集中处理</item>
+        <item>自行处理</item>
+        <item>特殊处理</item>
+    </array>
+    <array name="process_method1_not">
+        <item>自行处理</item>
+        <item>特殊处理</item>
+    </array>
+    <array name="process_method2">
+        <item>深埋</item>
+        <item>化制</item>
+        <item>高温</item>
+        <item>化学</item>
+        <item>其他</item>
+    </array>
+    <!--无害化处理厂集中处理任务-->
+    <array name="harmless_concentrate">
+        <item>化制</item>
+        <item>高温</item>
+        <item>化学</item>
+        <item>其他</item>
+    </array>
+    <!--存栏规模-->
+    <array name="the_amount_of_scale">
+        <item>乳用</item>
+        <item>种用</item>
+        <item>商品用</item>
+        <item>其他</item>
+    </array>
+    <!--死亡原因-->
+    <array name="deadth_reason">
+        <item>疑似疫情</item>
+        <item>其他</item>
+    </array>
+    <!--一般处理-->
+    <array name="general_process">
+        <item>实验室检测</item>
+        <item>隔离</item>
+        <item>治疗</item>
+        <item>其它</item>
+    </array>
+    <array name="harmless_process">
+        <item>焚烧</item>
+        <item>化制</item>
+        <item>掩埋</item>
+        <item>发酵</item>
+        <item>其它</item>
+    </array>
+
+    <array name="anim_product_type">
+        <item>种蛋</item>
+        <item>胚胎</item>
+        <item>精液</item>
+    </array>
+
+    <array name="anim_unit_type">
+        <item>支</item>
+        <item>剂</item>
+    </array>
+
+    <array name="anim_type">
+        <item>猪</item>
+        <item>牛</item>
+        <item>羊</item>
+        <item>鹿</item>
+        <item>骆驼</item>
+        <item>马</item>
+        <item>骡</item>
+        <item>驴</item>
+        <item>鸡</item>
+        <item>鸭</item>
+        <item>鹅</item>
+        <item>鹌鹑</item>
+        <item>鸽</item>
+        <item>犬</item>
+        <item>猫</item>
+        <item>兔</item>
+        <item>蜜蜂</item>
+        <item>其他</item>
+    </array>
+    <!--用途-->
+    <array name="useage">
+        <item>饲养</item>
+        <item>屠宰</item>
+        <item>种用</item>
+        <item>乳用</item>
+        <item>交易</item>
+        <item>役用</item>
+        <item>宠用</item>
+        <item>试验</item>
+        <item>展览</item>
+        <item>演出</item>
+        <item>比赛</item>
+        <item>其他</item>
+    </array>
+
+    <array name="source">
+        <item>家畜家禽</item>
+        <item>人工饲养</item>
+        <item>合法捕获</item>
+    </array>
+
+    <array name="start_place_type">
+        <item>养殖场</item>
+        <item>交易市场</item>
+        <item>散养户</item>
+        <item>其他</item>
+    </array>
+
+    <array name="end_place_type">
+        <item>养殖场</item>
+        <item>屠宰场</item>
+        <item>交易市场</item>
+        <item>散养户</item>
+        <item>其他</item>
+    </array>
+    <array name="quarantine_objects">
+        <item>法定检疫对象</item>
+        <item>其它对象</item>
+    </array>
+
+    <array name="xuanze_yesno">
+        <item>请选择</item>
+        <item>是</item>
+        <item>否</item>
+    </array>
+
+    <array name="qiye_type">
+        <item>饲料生产企业</item>
+        <item>兽药生产企业</item>
+        <item>兽药经营企业</item>
+        <item>动物养殖场</item>
+        <item>动物屠宰场</item>
+        <item>动物诊疗机构</item>
+        <item>无害化处理厂</item>
+        <item>隔离场所</item>
+        <item>收集点信息</item>
+        <item>生鲜乳收购站</item>
+    </array>
+
+
+    <array name="check_result">
+        <item>请选择</item>
+        <item>正常</item>
+        <item>异常</item>
+    </array>
+
+    <array name="buhege_chuli">
+        <item>一般处理</item>
+        <item>生物安全处理</item>
+    </array>
+
+    <array name="buhege_jiance">
+        <item>实验室检测</item>
+        <item>隔离</item>
+        <item>其它</item>
+    </array>
+
+    <array name="buhege_jiance2">
+        <item>销毁</item>
+        <item>无害化处理</item>
+    </array>
+    <string-array name="sp_slaughterValue">
+        <item>正常</item>
+        <item>异常</item>
+    </string-array>
+    <string-array name="sp_measures">
+        <item>限制移动，报告疫情</item>
+        <item>隔离观察</item>
+        <item>实验室检测</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="sp_laiyuan">
+        <item>执法检查</item>
+        <item>群众举报</item>
+        <item>上级机关交办</item>
+        <item>移送</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="sp_anjiantype">
+        <item>动物卫生监督</item>
+        <item>兽药</item>
+        <item>饲料</item>
+        <item>屠宰</item>
+        <item>生鲜乳</item>
+        <item>动物诊疗</item>
+        <item>其他</item>
+    </string-array>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="str_checkdevice">check equipment </string>
+    <string name="str_open">turn on Bluetooth</string>
+    <string name="str_close">turn off Bluetooth</string>
+    <string name="str_matched">View paired devices</string>
+    <string name="str_openimg">open picture </string>
+    <string name="str_create2d">qrcode</string>
+    <string name="str_createbar">barcode</string>
+    <string name="str_order">FontSize</string>
+    <string name="str_scan">scanning equipment</string>
+    <string name="str_printword">Print </string>
+    <string name="str_printword_desc">Print GBK, Unicode text encoding</string>
+    <string name="str_printimg">print pictures</string>
+    <string name="str_printimg_desc">Select the picture to print</string>
+    <string name="str_printbarcode">BARcode printing </string>
+    <string name="str_printbarcode_desc">dynamically create a dimensional code printing </string>
+    <string name="str_printqrcode">QRcode printing </string>
+    <string name="str_printqrcode_desc">dynamically create 2D code printing </string>
+    <string name="str_printcmd">send printer instructions </string>
+    <string name="str_printcmd_desc">send a print instruction set other instructions </string>
+    <string name="str_disconnect">disconnect</string>
+    <string name="str_device">device</string>
+    <string name="str_scaning">scanning</string>
+    <string name="str_unconnected">not connected!</string>
+    <string name="str_succonnect">connected successfully!</string>
+    <string name="str_faileconnect">connection failed!</string>
+    <string name="str_lose">connection lost!</string>
+    <string name="str_cannotcreate2d">create 2D failed!</string>
+    <string name="str_cannotcreatebar">failed to create a one-dimensional code </string>
+    <string name="str_devecehasblue">Bluetooth equipment! </string>
+    <string name="str_nomatched">no matching equipment!</string>
+    <string name="str_connected">connected </string>
+    <string name="str_disconnected">not connected to </string>
+    <string name="str_connecting">connecting to </string>
+    <string name="str_hasnodevice">no Bluetooth devices! </string>
+    <string name="str_scanover">scanning is finished!</string>
+    <string name="chose">select</string>
+    <string name="mode_bt">BT Printer</string>
+    <string name="mode_wifi">Wifi Printer</string>
+    <string name="mode_usb">USB Printer</string>
+    <string name="str_printunicode">Print Unicode</string>
+    <string name="str_printtext">打印</string>
+    <string name="str_exit">Sure exit and close the equipment?</string>
+    <string name="str_autotime">Interval(ms):</string>
+    <string name="str_autoprint">Auto Print</string>
+
+
+    <string name="str_printer_state">STATE</string>
+    <string name="str_printer_printing">Printing</string>
+    <string name="str_printer_lowpower">Low power</string>
+    <string name="str_printer_nopaper">No paper</string>
+    <string name="str_printer_bufferfull">Buffer full</string>
+    <string name="str_printer_buffernull">Buffer null</string>
+    <string name="str_printer_hightemperature">High temperature</string>
+
+    <string name="str_custom_instruction">Instruction</string>
+    <string name="button_send_instruction">Send</string>
+
+    <string name="print_setting">Printer Setting</string>
+    <string name="code_transformation">Black Mark</string>
+
+
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        style="@style/TextView_style"
+        android:textColor="#ff8f2c"
+        android:id="@+id/tv_slaughterTitle"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+   />
+
+    <TextView
+        style="@style/Line_style"
+        android:layout_margin="0dp"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow>
+
+            <View
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/textView25"
+                style="@style/TextView_style"
+                android:minHeight="50dp"
+                android:text="检查类型"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                style="@style/TextView_style"
+                android:textSize="15sp"
+                android:minHeight="50dp"
+                android:id="@+id/tv_slaughterType"
+                android:layout_weight="1" />
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TextView
+            style="@style/Line_style"
+            android:layout_margin="0dp" />
+
+        <TableRow>
+
+            <View
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                 />
+
+            <TextView
+                style="@style/TextView_style"
+                android:textSize="15sp"
+                android:minHeight="50dp"
+                android:text="是否正常"
+               />
+
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                style="@style/TextView_style"
+                android:textSize="15sp"
+                android:minHeight="50dp"
+                android:id="@+id/sp_chooseYN"
+                android:layout_weight="1"
+                android:entries="@array/sp_slaughterValue"
+                />
+
+            <View
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_height="match_parent"
+         />
+        </TableRow>
+
+        <TextView
+            style="@style/Line_style"
+            android:layout_margin="0dp"/>
+
+        <TableRow>
+
+            <View
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+               />
+
+            <TextView
+                style="@style/TextView_style"
+                android:textSize="15sp"
+                android:minHeight="50dp"
+                android:id="@+id/textView24"
+                android:text="圈号"
+                />
+
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                style="@style/EditText_style"
+                android:textSize="15sp"
+                android:layout_margin="8dp"
+                android:id="@+id/et_circleNo"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TextView
+            style="@style/Line_style"
+            android:layout_margin="0dp" />
+
+        <TableRow>
+
+            <View
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+               />
+
+            <TextView
+                style="@style/TextView_style"
+                android:textSize="15sp"
+                android:minHeight="50dp"
+                android:text="数量"
+         />
+
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                style="@style/EditText_style"
+                android:textSize="15sp"
+                android:layout_margin="8dp"
+                android:id="@+id/et_number"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/Line_style"
+                android:layout_margin="0dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TextView
+            style="@style/Line_style"
+            android:layout_margin="0dp"/>
+
+    </TableLayout>
+        <TextView
+            style="@style/TextView_style"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:id="@+id/tv_slaughterPosition"
+            android:textColor="@color/white"
+            android:background="@drawable/tag2"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

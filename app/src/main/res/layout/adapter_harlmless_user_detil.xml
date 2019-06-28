@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:id="@+id/bt_select"
+        style="@style/Layout_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="养殖场(户)\n名称" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextView_style"
+                android:layout_marginLeft="60dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="地址" />
+
+            <TextView
+                android:id="@+id/tv_addr"
+                style="@style/TextView_style"
+                android:layout_marginLeft="60dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="场所类型" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/TextView_style"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="现存数量" />
+
+            <TextView
+                android:id="@+id/et_number"
+                style="@style/TextView_style"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/TextView_style"
+                android:layout_marginLeft="60dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="身份证" />
+
+            <TextView
+                android:id="@+id/tv_idCrad"
+                style="@style/TextView_style"
+                android:layout_marginLeft="44dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/TextView_style"
+                android:text="一卡通号" />
+
+            <TextView
+                android:id="@+id/tv_icCrad"
+                style="@style/TextView_style"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

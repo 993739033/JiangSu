@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        style="@style/Layout_style"
+        android:orientation="horizontal"
+        android:id="@+id/search_toolbar"
+        android:elevation="4dp"
+        android:outlineProvider="bounds"
+        android:transitionGroup="false">
+
+
+        <SearchView
+            android:layout_weight="1"
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:iconifiedByDefault="false"
+            android:searchIcon="@android:color/transparent"
+            android:transitionGroup="true" />
+
+        <Button
+            android:id="@+id/btn_queren"
+            android:background="@drawable/select_bg"
+            android:textColor="@color/white"
+            android:layout_width="80dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_height="34dp"
+            android:text="确定" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/results_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+
+        <com.wyw.jiangsu.view.springview.widget.SpringView
+            android:background="@color/background"
+            android:id="@+id/springView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:scrollbars="vertical" />
+        </com.wyw.jiangsu.view.springview.widget.SpringView>
+
+        <RelativeLayout
+            android:id="@+id/view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="没有数据"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

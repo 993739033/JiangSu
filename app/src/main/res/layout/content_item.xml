@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:id="@+id/layout"
+    android:minHeight="64dp"
+    android:background="?android:attr/selectableItemBackground"
+    >
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        />
+        <TextView
+            android:gravity="center"
+            android:text="类型"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_gravity="top"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tag2"
+            android:id="@+id/img_top_icon"
+            android:layout_width="36dp"
+            android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!--android:background="@drawable/text_style"-->
+
+    <LinearLayout
+        android:id="@+id/lin_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+    </LinearLayout>
+
+</LinearLayout>

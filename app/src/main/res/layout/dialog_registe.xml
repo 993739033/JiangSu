@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册成功！"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/et_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号：32010000004"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1注册成功后请等待管理员进行审核!"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2审核通过后请直接登录江苏省动物卫生监督管理应用系统！ "
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

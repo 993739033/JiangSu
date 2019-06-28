@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <com.wyw.jiangsu.view.CustomScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_7"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/class2" />
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_7"
+                            android:text="无害化处理中心" />
+
+                        <TextView
+                            android:id="@+id/tv_harmlsee_name"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_5"
+                            android:drawablePadding="12dp"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_1"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_1"
+                            android:text="处理人" />
+
+                        <TextView
+                            android:id="@+id/tv_harmlsee_person"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_1"
+                            android:drawablePadding="12dp"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_2"
+                            android:text="处理开始时间" />
+
+                        <TextView
+                            android:id="@+id/tv_harmlsee_process_date_start"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_2"
+                            android:drawablePadding="12dp"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_anim_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dcdcdc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:background="#ffffff"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="11dp"
+                                android:gravity="center"
+                                android:text="处理确认1"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/img_takephoto_confirm1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:onClick="takePhoto"
+                                android:src="@drawable/take_pictures" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/photo_view_confirm1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="123dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:adjustViewBounds="true"
+                                    android:background="#f7f7f7"
+                                    android:minHeight="170dp"
+                                    android:scaleType="fitXY" />
+
+                                <ImageView
+                                    android:id="@+id/iv_none_1"
+                                    android:layout_width="33dp"
+                                    android:layout_height="35dp"
+                                    android:clickable="false"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/none" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dcdcdc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:background="#ffffff"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="11dp"
+                                android:gravity="center"
+                                android:text="处理确认2"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/img_takephoto_confirm2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:onClick="takePhoto"
+                                android:src="@drawable/take_pictures" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/photo_view_confirm2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="123dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:adjustViewBounds="true"
+                                    android:background="#f7f7f7"
+                                    android:minHeight="170dp"
+                                    android:scaleType="fitXY" />
+
+                                <ImageView
+                                    android:id="@+id/iv_none_2"
+                                    android:layout_width="33dp"
+                                    android:layout_height="35dp"
+                                    android:clickable="false"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/none" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/TextView_style"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:text="处理产物数(公斤)"
+                            />
+                    </LinearLayout>
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_8"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/general_processing" />
+
+                        <TextView
+                            android:id="@+id/tv_8"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_8"
+                            android:text="处理方式"
+                            android:drawableRight="@drawable/required"
+                            />
+
+                        <TextView
+                            android:id="@+id/spinner_process_method"
+                            android:text="请选择"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_8"
+                            android:drawablePadding="12dp"
+                            android:drawableRight="@drawable/drop_down_drawable"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_9"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/oil_grease" />
+
+                        <TextView
+                            android:id="@+id/tv_9"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_9"
+                            android:text="油脂" />
+
+                        <EditText
+                            android:id="@+id/et_grease"
+                            android:layout_marginLeft="60dp"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_9"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_10"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/residue" />
+
+                        <TextView
+                            android:id="@+id/tv_10"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_10"
+                            android:text="残渣" />
+
+                        <EditText
+                            android:id="@+id/et_residue"
+                            android:layout_marginLeft="60dp"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_10"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_11"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/liquid_product" />
+
+                        <TextView
+                            android:id="@+id/tv_11"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_11"
+                            android:text="液体产物" />
+
+                        <EditText
+                            android:id="@+id/et_liquid_products"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_11"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_12"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time" />
+
+                        <TextView
+                            android:id="@+id/tv_12"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_12"
+                            android:text="处理结束时间" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_12"
+                            android:drawablePadding="12dp"
+                            android:drawableRight="@drawable/choose_time_down"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_process_person_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_style"
+                        android:minHeight="40dp"
+                        android:text="处理人签名"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_process_person_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/base"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_veterinarians_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_style"
+                        android:minHeight="40dp"
+                        android:text="驻场兽医签名"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_veterinarians_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/base"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/harmless_btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="31dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="确定"
+                    android:textColor="#fffefe"
+                    android:textSize="@dimen/common_text_size" />
+
+            </LinearLayout>
+        </com.wyw.jiangsu.view.CustomScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000" />
+
+        <com.wyw.jiangsu.view.photoview.PhotoView
+            android:id="@+id/parent_photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</FrameLayout>

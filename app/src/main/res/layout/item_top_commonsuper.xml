@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_farm"
+        style="@style/Layout_style">
+
+        <TextView
+            android:id="@+id/tv_FFarmName"
+            style="@style/TextView_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/slaughterhouse"
+            android:text="养殖场（户）名称" />
+
+        <EditText
+            android:id="@+id/et_FFarmName"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/bt_ercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/qr_code"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout_style">
+
+        <TextView
+            style="@style/TextView_style"
+            android:drawableLeft="@drawable/animal_species"
+            android:text="手动选择企业信息:" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Button
+            android:id="@+id/bt_qy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/select_bg"
+            android:minHeight="36dp"
+            android:text="选择企业" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_address"
+        style="@style/Layout_style">
+
+        <TextView
+            android:id="@+id/tv_FCityAdd"
+            style="@style/TextView_style"
+            android:drawableLeft="@drawable/origin" />
+
+        <EditText
+            android:id="@+id/et_FCityAdd"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_anim_type"
+        style="@style/Layout_style">
+
+        <TextView
+            android:id="@+id/tv_FCategory"
+            style="@style/TextView_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/animal_species"
+            android:text="养殖场（户）名称" />
+
+        <EditText
+            android:id="@+id/et_FCategory"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_anim_number"
+        style="@style/Layout_style">
+
+        <TextView
+            android:id="@+id/tv_clsl"
+            style="@style/TextView_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/quantity_unit" />
+
+        <EditText
+            android:id="@+id/et_clsl"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <View
+        style="@style/Line_style"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="0dp" />
+
+    <LinearLayout style="@style/Layout_style">
+
+        <TextView
+            style="@style/TextView_style"
+            android:drawableLeft="@drawable/information1"
+            android:text="代表人信息" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/lin_FLegalPerson"
+        style="@style/Layout_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_FLegalPerson"
+                style="@style/TextView_style"
+                android:drawableLeft="@drawable/representative"
+                android:text="法定代表人" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_FLegalPerson"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+    </LinearLayout>
+    <!--<View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        />-->
+    <LinearLayout
+        android:id="@+id/lin_FPhone"
+        style="@style/Layout_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_FPhone"
+                style="@style/TextView_style"
+                android:drawableLeft="@drawable/contact_way"
+                android:text="电话" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_FPhone"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <View
+        style="@style/Line_style"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="0dp" />
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />-->
+    <include layout="@layout/view_checkcontent_title" />
+    <!-- <include layout="@layout/view_split_vertical" />-->
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+       style="@style/Layout_style"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            style="@style/TextView_style"
+            android:id="@+id/tv_check_content"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:text="检查内容"
+           />
+
+        <include layout="@layout/view_split_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/rg_check_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_check_result_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14.4sp"
+                android:button="@drawable/selector_radiobtn"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:focusable="false"
+                android:text="是" />
+
+            <RadioButton
+                android:id="@+id/rb_check_result_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14.4sp"
+                android:button="@drawable/selector_radiobtn"
+                android:layout_margin="10dp"
+                android:focusable="false"
+                android:text="否" />
+
+        </RadioGroup>
+
+        <include layout="@layout/view_split_horizontal" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_add"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/view_split_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/rl_detil_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:clickable="false"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_takephone"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/img_camera"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/take_pictures"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/split_detil_picture"
+            layout="@layout/view_split_horizontal" />
+    </LinearLayout>
+    <!--<View
+        style="@style/Line_style"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="0dp"
+        />-->
+
+
+</LinearLayout>

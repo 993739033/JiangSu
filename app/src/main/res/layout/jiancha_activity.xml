@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:id="@+id/SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:background="@color/background"
+            style="@style/Layout_style"
+            android:orientation="vertical"
+            android:padding="0dp"
+            >
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_1"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/origin" />
+
+                    <TextView
+                        android:id="@+id/tv_q_1"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_1"
+                        android:text="检查地点" />
+
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/et_check_didian"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_1"
+                        />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_2"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/ask_authority" />
+
+                    <TextView
+                        android:id="@+id/tv_q_2"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_2"
+                        android:text="询问机关" />
+
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/et_xunwen_jiguan"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_2"
+                        />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_4"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_4"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_4"
+                        android:text="当事人" />
+
+
+                    <EditText
+                        android:focusable="false"
+                        android:layout_marginLeft="46dp"
+                        android:id="@+id/et_dangshiren"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_4"
+                        />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_3"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/inspection_office" />
+
+                    <TextView
+                        android:id="@+id/tv_q_3"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_3"
+                        android:text="检查机关" />
+
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/et_check_jiguan"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_3"
+                        />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_5"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_5"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_5"
+                        android:text="检查人员1" />
+
+
+                    <EditText
+                        android:id="@+id/et_check_renyuan1"
+                        android:layout_alignParentRight="false"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_5"
+                        android:layout_toLeftOf="@+id/bt_check_renyuan"
+                        android:focusable="false"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_6"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declaration_number" />
+
+                    <TextView
+                        android:id="@+id/tv_q_6"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_6"
+                        android:text="执法证件号1" />
+
+
+                    <EditText
+                        android:id="@+id/et_zhifa_zhengjianhao1"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_6"
+                        android:focusable="false"
+                        />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_8"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_8"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_8"
+                        android:text="检查人员2" />
+
+
+                    <EditText
+                        android:id="@+id/et_check_renyuan2"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_8"
+                        android:layout_marginLeft="24dp"
+                        android:focusable="false"
+                        />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_9"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declaration_number" />
+
+                    <TextView
+                        android:id="@+id/tv_q_9"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_9"
+                        android:text="执法证件号2" />
+
+
+                    <EditText
+                        android:id="@+id/et_zhifa_zhengjianhao2"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_9"
+                        android:focusable="false"
+                        />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_10"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_10"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_10"
+                        android:text="记录人"
+                        />
+
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/et_jiluren"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_10"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@+id/Layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_22"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/content" />
+
+                    <TextView
+                        android:id="@+id/tv_22"
+                        style="@style/TextView_style_relayout"
+                        android:text="现场检查（勘验）情况"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/img_22"
+                       />
+
+                </RelativeLayout>
+                <View style="@style/Line_style" />
+
+                <EditText
+                    android:focusable="false"
+                    android:id="@+id/et_check_qingkuang"
+                    style="@style/EditText_style"
+                    android:gravity="top|left"
+                    android:layout_margin="18dp"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:minHeight="160dp"
+                    android:padding="16dp" />
+            </LinearLayout>
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_style"
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/EditText_style"
+            android:id="@+id/tv_type"
+            android:layout_weight="1"
+            android:hint="动物类型"
+            android:focusable="false"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            style="@style/EditText_style"
+            android:id="@+id/tv_deadth"
+            android:layout_weight="1"
+            android:hint="死亡数"
+            android:focusable="false"
+            />
+
+
+        <EditText
+            android:focusable="false"
+            style="@style/EditText_style"
+            android:id="@+id/tv_insured"
+            android:layout_weight="1"
+            android:hint="参保数"
+            />
+
+    </LinearLayout>
+</LinearLayout>

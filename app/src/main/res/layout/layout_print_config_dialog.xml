@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    >
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/print_config_dialog_drawable"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/TextView_style"
+            android:text="打印参数设置"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextView_style"
+                android:text="左边框距\n左边缘距离:"
+                 />
+            <EditText
+                android:focusable="true"
+                android:id="@+id/et_x"
+                style="@style/EditText_style"
+                android:hint="cm"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/Layout_style"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextView_style"
+                android:text="上边框距\n上边缘距离:"
+                />
+            <EditText
+                android:focusable="true"
+                android:hint="cm"
+                android:id="@+id/et_y"
+                style="@style/EditText_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:background="@drawable/dialog_selector1"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="#4F4F4F"
+            android:text="取消"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="@color/background"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/dialog_enter"
+            android:background="@drawable/dialog_selector2"
+            android:gravity="center"
+            android:textColor="#FF7F00"
+            android:text="确定"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

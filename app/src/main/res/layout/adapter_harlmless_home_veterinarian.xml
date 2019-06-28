@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/Layout_style"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/img_1"
+            style="@style/Image_style_relayout"
+            android:src="@drawable/collection_point" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            style="@style/TextView_style_relayout"
+            android:layout_marginRight="28dp"
+            android:layout_toRightOf="@+id/img_1"
+            android:text="收集点" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextView_style_relayout"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_1"
+            android:drawablePadding="12dp"
+            android:gravity="right|center"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <View style="@style/Line_style" />
+
+    <RelativeLayout
+        style="@style/Layout_style"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/img_3"
+            style="@style/Image_style_relayout"
+            android:src="@drawable/origin" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            style="@style/TextView_style_relayout"
+            android:layout_marginRight="28dp"
+            android:layout_toRightOf="@+id/img_3"
+            android:text="地址" />
+
+        <TextView
+            android:id="@+id/tv_addr"
+            style="@style/TextView_style_relayout"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_3"
+            android:drawablePadding="12dp"
+            android:gravity="right|center"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <View style="@style/Line_style" />
+
+    <include layout="@layout/adapter_anim_type_header_total"/>
+
+    <LinearLayout
+        android:id="@+id/lin_add"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

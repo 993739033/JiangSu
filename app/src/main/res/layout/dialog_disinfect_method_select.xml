@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dialog_title_padding"
+        android:paddingTop="@dimen/dialog_title_padding"
+        android:text="消毒方法"
+        android:textColor="#000000"
+        android:textSize="@dimen/dialog_title_wordsize"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base" />
+
+    <com.wyw.jiangsu.dialog.datepickdialog.EasyPickerView
+        android:id="@+id/method_pick_view"
+        android:layout_width="match_parent"
+        style="@style/style_epv"
+        custom:epvMaxShowNum="7"
+        custom:epvRecycleMode="false"
+        custom:epvTextColor="@color/bule"
+        custom:epvTextColorUnSelect="@color/cuxian"
+        custom:epvTextMaxScale="1.4"
+        custom:epvTextMinAlpha="0.5"
+        custom:epvTextPadding="20dp"
+        custom:epvTextSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/base" />
+
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

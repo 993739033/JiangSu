@@ -1,0 +1,73 @@
+/// <summary>
+	//养殖场申报
+        /// 畜主姓名ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 畜主姓名
+        /// </summary>
+        public string Fxzxm { get; set; }
+
+        /// <summary>
+        /// 养殖场类型
+        /// </summary>
+        public string Fyzclx { get; set; }
+
+        /// <summary>
+        /// 现存栏量
+        /// </summary>
+        public int Fxcll { get; set; }
+
+        /// <summary>
+        /// 申报日期
+        /// </summary>
+        public DateTime Fsbrq { get; set; }
+
+        /// <summary>
+        /// 病死动物种类
+        /// </summary>
+        public string Fbsdwzl { get; set; }
+
+        /// <summary>
+        /// 死亡数
+        /// </summary>
+        public int Fsws { get; set; }
+
+        /// <summary>
+        /// 参保数
+        /// </summary>
+        public int Fcbs { get; set; }
+
+        /// <summary>
+        /// 耳标号
+        /// </summary>
+        public string QDWErBiaoHao { get; set; }
+
+        /// <summary>
+        /// 疑似死亡原因
+        /// </summary>
+        public string Fysswyy { get; set; }
+
+        /// <summary>
+        /// 非正常死亡
+        /// </summary>
+        public string Fsiwh { get; set; }
+
+        /// <summary>
+        /// 处理方式
+        /// </summary>
+        public string Fclfs { get; set; }
+
+        /// <summary>
+        /// 签名
+        /// </summary>
+        public string Fqm { get; set; }
+        /// <summary>
+        ///地址
+        /// </summary>
+        public string Fxxdz { get; set; }
+        /// <summary>
+        /// 单位
+        /// </summary>
+        public string Fdw1 { get; set; }

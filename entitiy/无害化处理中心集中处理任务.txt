@@ -1,0 +1,95 @@
+/// <summary>
+    /// 无害化处理中心集中处理任务
+    /// </summary>
+    public class APP_WHHCLZX
+    {
+        /// <summary>
+        /// 图片数组
+        /// </summary>
+        public string len { get; set; }
+
+        /// <summary>
+        /// 关联主ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 关联任务ID集合
+        /// </summary>
+        public string FGlid { get; set; }
+
+        /// <summary>
+        /// 动物种类数组
+        /// </summary>
+        public string dwzl { get; set; }
+
+        /// <summary>
+        /// 死亡数数组
+        /// </summary>
+        public string sws { get; set; }
+
+        /// <summary>
+        /// 参保数数组
+        /// </summary>
+        public string cbs { get; set; }
+
+        /// <summary>
+        /// 重量数组
+        /// </summary>
+        public string zls { get; set; }
+
+        /// <summary>
+        /// 合计
+        /// </summary>
+        public decimal HJ { get; set; }
+
+        /// <summary>
+        /// 无害化处理中心
+        /// </summary>
+        public string WHHCLZX { get; set; }
+
+        /// <summary>
+        /// 处理日期
+        /// </summary>
+        public DateTime CLRQ { get; set; }
+
+        /// <summary>
+        /// 处理人
+        /// </summary>
+        public string CLR { get; set; }
+
+        /// <summary>
+        /// 处理方式
+        /// </summary>
+        public string CLFSS { get; set; }
+
+        /// <summary>
+        /// 温度
+        /// </summary>
+        public string WD { get; set; }
+
+        /// <summary>
+        /// 压力
+        /// </summary>
+        public string YL { get; set; }
+
+        /// <summary>
+        /// 时间
+        /// </summary>
+        public DateTime SJ { get; set; }
+
+        /// <summary>
+        /// 油脂
+        /// </summary>
+        public decimal YZ { get; set; }
+
+        /// <summary>
+        /// 残渣
+        /// </summary>
+        public decimal CZ { get; set; }
+
+        /// <summary>
+        /// 液体产物
+        /// </summary>
+        public decimal YTCW { get; set; }
+    }

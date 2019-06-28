@@ -1,0 +1,234 @@
+/// <summary>
+        /// 申报单编号
+        /// </summary>
+        public string QDWNumber
+        { get; set; }
+        /// <summary>
+        /// 申报人名称
+        /// </summary>
+        public string QDWCargoOwner
+        { get; set; }
+        /// <summary>
+        /// 电话
+        /// </summary>
+        public string QDWPhone
+        { get; set; }
+        /// <summary>
+        /// 畜种
+        /// </summary>
+        public string QDWXuZhong
+        { get; set; }
+        /// <summary>
+        /// 畜种【1】
+        /// </summary>
+        public string QDWXuZhongOne
+        { get; set; }
+        /// <summary>
+        /// 畜种【2】
+        /// </summary>
+        public string QDWXuZhongTwo
+        { get; set; }
+        /// <summary>
+        /// 畜种总
+        /// </summary>
+        public string QDWXuZhongZ
+        { get; set; }
+        /// <summary>
+        /// 数量
+        /// </summary>
+        public int QDWQuantity
+        { get; set; }
+
+        public string QDWDanWei
+        { get; set; }
+        /// <summary>
+        /// 用途
+        /// </summary>
+        public string QDWYongTu
+        { get; set; }
+        /// <summary>
+        /// 来源
+        /// </summary>
+        public string QDWLaiYuan
+        { get; set; }
+
+        /// <summary>
+        /// 省【起运地】
+        /// </summary>
+        public string QDWShengQy
+        { get; set; }
+        /// <summary>
+        /// 市【起运地】
+        /// </summary>
+        public string QDWShiQy
+        { get; set; }
+        /// <summary>
+        /// 县【起运地】
+        /// </summary>
+        public string QDWXianQy
+        { get; set; }
+        /// <summary>
+        ///  保存 县/市/区【起运地】
+        /// </summary>
+        public string QDWXsqQy
+        { get; set; }
+        /// <summary>
+        /// 乡镇【起运地】
+        /// </summary>
+        public string QDWXiangQy
+        { get; set; }
+        /// <summary>
+        /// 村【起运地】
+        /// </summary>
+        public string QDWCunQy
+        { get; set; }
+        /// <summary>
+        /// 养殖场、交易市场、散养户【起运地】
+        /// </summary>
+        public string QDWTypeQy
+        { get; set; }
+        /// <summary>
+        /// 起运地
+        /// </summary>
+        public string QDAddQy
+        { get; set; }
+        /// <summary>
+        /// 省【到达地】
+        /// </summary>
+        public string QDWShengDd
+        { get; set; }
+
+        /// <summary>
+        /// 市【到达地】
+        /// </summary>
+        public string QDWShiDd
+        { get; set; }
+
+        /// <summary>
+        /// 县【到达地】
+        /// </summary>
+        /// </summary>
+        public string QDWXianDd
+        { get; set; }
+        /// <summary>
+        /// 县/市/区【到达地】
+        /// </summary>
+        public string QDWXsqDd
+        { get; set; }
+        /// <summary>
+        /// 乡镇【到达地】
+        /// </summary>
+        public string QDWXiangDd
+        { get; set; }
+        /// <summary>
+        /// 村【到达地】
+        /// </summary>
+        public string QDWCunDd
+        { get; set; }
+        /// <summary>
+        /// 养殖场、屠宰场、交易市场、散养户【到达地】
+        /// </summary>
+        public string QDWTypeDd
+        { get; set; }
+        /// <summary>
+        /// 到达地
+        /// </summary>
+        public string QDWAddDd
+        { get; set; }
+        /// <summary>
+        /// 牲畜耳标号
+        /// </summary>
+        public string QDWErBiaoHao
+        { get; set; }
+        
+        /// <summary>
+        /// 启运时间
+        /// </summary>
+        public DateTime DateQy
+        { get; set; }
+
+        /// <summary>
+        /// 报检时间
+        /// </summary>
+        public DateTime DateQF
+        { get; set; }
+
+        /// <summary>
+        /// 小时
+        /// </summary>
+        public string dr
+        { get; set; }
+
+        /// <summary>
+        /// 许可证号
+        /// </summary>
+        public string XKZH
+        { get; set; }
+
+        /// <summary>
+        /// 有效《跨省引进乳用种用动物检疫审批表》
+        /// </summary>
+        public string yx
+        { get; set; }
+
+        /// <summary>
+        /// 申报人签字（盖章）
+        /// </summary>
+        public string GZ
+        { get; set; }
+
+        /// <summary>
+        /// 申报处理结果
+        /// </summary>
+        public string QDWAccepted
+        { get; set; }
+        /// <summary>
+        /// 检疫地点
+        /// </summary>
+        public string QDWAddress
+        { get; set; }
+        /// <summary>
+        /// 不受理理由
+        /// </summary>
+        public string QDWLiYou
+        { get; set; }
+        /// <summary>
+        /// 经办人
+        /// </summary>
+        public string QDWAttn
+        { get; set; }
+        /// <summary>
+        /// 经办人联系电话
+        /// </summary>
+        public string QDWJBRDianHua
+        { get; set; }
+        /// <summary>
+        /// 检疫时间
+        /// </summary>
+        public DateTime DateNpy
+        { get; set; }
+        /// <summary>
+        /// 拟派时间
+        /// </summary>
+        public DateTime CLRQ
+        { get; set; }
+        /// <summary>
+        /// 申报单状态
+        /// </summary>
+        public string IsPrant
+        { get; set; }
+        /// <summary>
+        /// 申报类型
+        /// </summary>
+        public string FqSbType
+        { get; set; }
+        /// <summary>
+        /// 有效《种畜禽生产经营许可证》
+        /// </summary>
+        public string FqZxqscjyxkz
+        { get; set; }
+        /// <summary>
+        /// 动物产品种类
+        /// </summary>
+        public string FqProduct
+        { get; set; }

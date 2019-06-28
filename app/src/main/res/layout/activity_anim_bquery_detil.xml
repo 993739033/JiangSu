@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingLeft="@dimen/common_padding_left"
+        android:paddingRight="@dimen/common_padding_right"
+        android:paddingTop="@dimen/common_padding_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:layout_marginRight="5dp"
+                    android:text="检疫证编号:" />
+
+                <EditText
+                    android:id="@+id/et_quarantine_no"
+                    style="@style/StyleEdit"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:layout_marginRight="5dp"
+                    android:text="货主:" />
+
+                <EditText
+                    android:id="@+id/et_user_name"
+                    style="@style/StyleEdit"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/StyleLinear">
+
+                    <TextView
+                        style="@style/StyleTextLeft"
+                        android:layout_marginRight="5dp"
+                        android:text="联系电话:" />
+
+                    <EditText
+                        android:id="@+id/et_user_phone"
+                        style="@style/StyleEdit"
+                        android:focusable="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/StyleLinear">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/StyleTextLeft"
+                        android:layout_marginRight="5dp"
+                        android:text="动物种类:" />
+
+                    <EditText
+                        android:id="@+id/et_anim_type"
+                        style="@style/StyleEdit"
+                        android:focusable="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:layout_marginRight="5dp"
+                    android:text="数量及单位:" />
+
+                <EditText
+                    android:id="@+id/et_anim_count"
+                    style="@style/StyleEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:focusable="false"
+                    android:maxLength="5"
+                    android:minWidth="150dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:layout_marginRight="5dp"
+                    android:text="用途:" />
+
+                <EditText
+                    android:id="@+id/et_purpose"
+                    style="@style/StyleEdit"
+                    android:focusable="false" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_source_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<LinearLayout style="@style/StyleLinear">-->
+
+                <!--<TextView-->
+                <!--style="@style/StyleTextLeft"-->
+                <!--android:layout_marginRight="5dp" />-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/et_source_extra"-->
+                <!--style="@style/StyleEdit"-->
+                <!--android:focusable="false" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/StyleLinear">
+
+                    <TextView
+                        style="@style/StyleTextLeft"
+                        android:layout_marginRight="5dp"
+                        android:text="起运地:" />
+
+                    <EditText
+                        android:id="@+id/et_start_place"
+                        style="@style/StyleEdit"
+                        android:focusable="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <EditText
+                    android:id="@+id/et_start_village"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="@color/common_edit_color"
+                    android:textColorHint="@color/common_edit_hint_color"
+                    android:textSize="@dimen/common_edit_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="乡(镇)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+
+                <EditText
+                    android:id="@+id/et_start_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="@color/common_edit_color"
+                    android:textColorHint="@color/common_edit_hint_color"
+                    android:textSize="@dimen/common_edit_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/StyleLinear">
+
+                    <TextView
+                        style="@style/StyleTextLeft"
+                        android:layout_marginRight="5dp"
+                        android:text="到达地:" />
+
+                    <EditText
+                        android:id="@+id/et_end_place"
+                        style="@style/StyleEdit"
+                        android:focusable="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <EditText
+                    android:id="@+id/et_end_village"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="@color/common_edit_color"
+                    android:textColorHint="@color/common_edit_hint_color"
+                    android:textSize="@dimen/common_edit_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="乡(镇)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+
+                <EditText
+                    android:id="@+id/et_end_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="@color/common_edit_color"
+                    android:textColorHint="@color/common_edit_hint_color"
+                    android:textSize="@dimen/common_edit_size" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:layout_marginRight="5dp"
+                    android:text="耳标号:" />
+
+                <TextView
+                    android:id="@+id/tv_erbiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="160dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/xixian" />
+            <TextView
+                android:text="　　本批动物经检疫合格,应于本日内到达有效。"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/xixian"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:minWidth="120dp"
+                    android:layout_marginRight="5dp"
+                    android:text="官方兽医签字:" />
+
+                <EditText
+                    android:id="@+id/et_signature_checked"
+                    style="@style/StyleEdit"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleLinear">
+
+                <TextView
+                    style="@style/StyleTextLeft"
+                    android:minWidth="120dp"
+                    android:layout_marginRight="5dp"
+                    android:text="签发日期:" />
+
+                <TextView
+                    android:id="@+id/et_prove_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_7"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/class2" />
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_7"
+                            android:text="收集车辆" />
+
+                        <TextView
+                            android:id="@+id/tv_collection_car"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_5"
+                            android:drawablePadding="12dp"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_1"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_1"
+                            android:text="收集日期" />
+
+                        <TextView
+                            android:id="@+id/tv_collection_time"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_1"
+                            android:drawablePadding="12dp"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_2"
+                            android:text="收集人" />
+
+                        <TextView
+                            android:id="@+id/tv_collection_person"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_2"
+                            android:drawablePadding="12dp"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_anim_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="此次入库合计数"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                   />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="-10dp"
+                    style="@style/Layout_style"
+                    >
+                    <EditText
+                        style="@style/EditText_style"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:text="合计"
+                        android:textStyle="bold"
+                        android:focusable="false"
+                        />
+
+                    <EditText
+                        android:focusable="false"
+                        android:layout_width="0dp"
+                        style="@style/EditText_style"
+                        android:id="@+id/tv_total"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:hint="重量"
+                        />
+                </LinearLayout>
+                <RelativeLayout style="@style/Layout_style"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_21"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/general_processing" />
+
+                    <TextView
+                        style="@style/TextView_style_relayout"
+                        android:id="@+id/tv_21"
+                        android:layout_marginRight="71dp"
+                        android:layout_toRightOf="@+id/img_21"
+                        android:text="是否立即处理" />
+
+                    <TextView
+                        android:id="@+id/tv_shifou"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_21"
+                        android:drawablePadding="12dp"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dcdcdc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:background="#ffffff"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="11dp"
+                                android:gravity="center"
+                                android:text="收集入库1"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/img_takephoto_storage1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:onClick="takePhoto"
+                                android:src="@drawable/take_pictures" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <com.wyw.jiangsu.view.FullPhotoView
+                                    android:id="@+id/photo_view_storage1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="123dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:adjustViewBounds="true"
+                                    android:background="#f7f7f7"
+                                    android:minHeight="170dp"
+                                    android:scaleType="fitXY" />
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/iv_none_1"
+                                    android:layout_width="33dp"
+                                    android:layout_height="35dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/none" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dcdcdc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:background="#ffffff"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="11dp"
+                                android:gravity="center"
+                                android:text="收集入库2"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/img_takephoto_storage2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:onClick="takePhoto"
+                                android:src="@drawable/take_pictures" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <com.wyw.jiangsu.view.FullPhotoView
+                                    android:id="@+id/photo_view_storage2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="123dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:adjustViewBounds="true"
+                                    android:background="#f7f7f7"
+                                    android:minHeight="170dp"
+                                    android:scaleType="fitXY" />
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/iv_none_2"
+                                    android:layout_width="33dp"
+                                    android:layout_height="35dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/none" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="#dcdcdc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="收集人签名" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="兽医签名"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <View style="@style/Line_style" />
+
+                    <LinearLayout
+                        android:id="@+id/photo_view_qianming1_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/photo_view_qianming1"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:id="@+id/tv_view_qianming1_ll"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/tv_view_qianming1"
+                        android:layout_width="match_parent"
+                        android:focusable="false"
+                     />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="驻场兽医签名" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="兽医签名"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <View style="@style/Line_style" />
+
+                    <LinearLayout
+                        android:id="@+id/photo_view_qianming2_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/photo_view_qianming2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:id="@+id/tv_view_qianming2_ll"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/tv_view_qianming2"
+                        android:layout_width="match_parent"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="无害化处理中心冷库人员签名" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="兽医签名"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <View style="@style/Line_style" />
+
+                    <LinearLayout
+                        android:id="@+id/photo_view_qianming3_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/photo_view_qianming3"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    android:id="@+id/tv_view_qianming3_ll"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/tv_view_qianming3"
+                        android:layout_width="match_parent"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout style="@style/Layout_style"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_q_1"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/weight" />
+
+                    <TextView
+                        android:id="@+id/tv_q_1"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_1"
+                        android:drawablePadding="3dp"
+                        android:text="确认重量" />
+
+
+                    <EditText
+                        android:id="@+id/et_confirm_weight"
+                        android:focusable="false"
+                        style="@style/EditText_style_relayout"
+                        android:layout_alignParentRight="false"
+                        android:layout_toLeftOf="@+id/tv_11"
+                        android:layout_toRightOf="@+id/tv_q_1"
+                        android:inputType="number"
+                        />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:text="kg"
+                        android:id="@+id/tv_11"
+                        style="@style/TextView_style"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

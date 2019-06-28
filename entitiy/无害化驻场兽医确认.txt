@@ -1,0 +1,65 @@
+/// <summary>
+    /// 无害化驻场兽医确认
+    /// </summary>
+    public class APP_ZCSYQR
+    {
+        /// <summary>
+        /// 图片数组
+        /// </summary>
+        public string len { get; set; }
+
+        /// <summary>
+        /// 动物种类数组
+        /// </summary>
+        public string dwzl { get; set; }
+
+        /// <summary>
+        /// 死亡数数组
+        /// </summary>
+        public string sws { get; set; }
+
+        /// <summary>
+        /// 参保数数组
+        /// </summary>
+        public string cbs { get; set; }
+
+        /// <summary>
+        /// 重量数组
+        /// </summary>
+        public string zls { get; set; }
+
+        /// <summary>
+        /// 关联主ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 关联任务ID集合
+        /// </summary>
+        public string FGlid { get; set; }
+
+        /// <summary>
+        /// 是否立即处理
+        /// </summary>
+        public string SFCL { get; set; }
+
+        /// <summary>
+        /// 收集车辆
+        /// </summary>
+        public string CPH { get; set; }
+
+        /// <summary>
+        /// 收集日期
+        /// </summary>
+        public DateTime SJRQ { get; set; }
+
+        /// <summary>
+        /// 收集人
+        /// </summary>
+        public string SJR { get; set; }
+
+        /// <summary>
+        /// 入场日期
+        /// </summary>
+        public DateTime RCRQ { get; set; }
+    }

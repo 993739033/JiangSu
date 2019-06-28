@@ -1,0 +1,20 @@
+/// <summary>
+//监管兽医指派
+        /// 申报关联ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 指派ID
+        /// </summary>
+        public int ZPID { get; set; }
+
+        /// <summary>
+        /// 指派人
+        /// </summary>
+        public string ZPR { get; set; }
+
+        /// <summary>
+        /// 图片数组
+        /// </summary>
+        public string len { get; set; }

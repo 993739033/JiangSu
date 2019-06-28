@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TableLayout
+                    android:id="@+id/layout_check_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TableRow>
+
+                        <View
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:minHeight="50dp"
+                            android:text="检查要求"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+
+                        <TextView
+                            android:id="@+id/tv_check_require"
+                            style="@style/TextView_style"
+                            android:layout_weight="1"
+                            android:minHeight="50dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+                    </TableRow>
+
+                    <TextView
+                        style="@style/Line_style"
+                        android:layout_margin="0dp" />
+
+                    <TableRow>
+
+                        <View
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:minHeight="50dp"
+                            android:text="检查结果"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+
+                        <RadioGroup
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:button="@drawable/radiobutton_selector"
+                                android:text="是" />
+
+                            <RadioButton
+                                android:id="@+id/rb_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radiobutton_selector"
+                                android:text="否" />
+                        </RadioGroup>
+
+                        <TextView
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+                    </TableRow>
+
+                    <TextView
+                        style="@style/Line_style"
+                        android:layout_margin="0dp" />
+
+                    <TableRow>
+
+                        <View
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:minHeight="50dp"
+                            android:text="备注"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+
+                        <EditText
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:gravity="left|top"
+                            android:id="@+id/et_remark"
+                            style="@style/EditText_style"
+                            android:layout_weight="1"
+                            android:minHeight="100dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/Line_style"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp" />
+                    </TableRow>
+
+                    <TextView
+                        style="@style/Line_style"
+                        android:layout_margin="0dp" />
+                </TableLayout>
+            </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <com.wyw.jiangsu.view.CustomScrollView
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/serial_number" />
+
+                    <TextView
+                        android:id="@+id/tv_q"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q"
+                        android:drawablePadding="3dp"
+                        android:text="出库单\n流水号" />
+
+
+                    <EditText
+                        android:id="@+id/et_liushui_hao"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q"
+                        android:focusable="false" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_7"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/collection_point" />
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        style="@style/TextView_style_relayout"
+                        android:layout_marginRight="28dp"
+                        android:layout_toRightOf="@+id/img_7"
+                        android:text="收集点名称" />
+
+                    <TextView
+                        android:id="@+id/et_shoujidian_name"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_5"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/drop_down_focus"
+                        android:gravity="right|center"
+                        android:textColor="#000000" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_1"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/origin" />
+
+                    <TextView
+                        android:id="@+id/tv_q_1"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_1"
+                        android:drawablePadding="3dp"
+                        android:text="收集点地址" />
+
+
+                    <EditText
+                        android:id="@+id/et_shoujidian_adress"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_1"
+                        android:focusable="false" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_2"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/processing_center" />
+
+                    <TextView
+                        android:id="@+id/tv_q_2"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_2"
+                        android:drawablePadding="3dp"
+                        android:text="无害化处\n理场" />
+
+
+                    <EditText
+                        android:id="@+id/et_chulizhongxin"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_2"
+                        android:focusable="false" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_16"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/tv_15"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_16"
+                        android:text="出库日期" />
+
+
+                    <TextView
+                        android:id="@+id/et_chukudate"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_15"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/choose_time_focus"
+                        android:gravity="right|center"
+                         />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/whhchoose_item_layout"></include>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+               android:layout_marginBottom="20dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </com.wyw.jiangsu.view.CustomScrollView>
+
+</LinearLayout>

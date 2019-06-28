@@ -1,0 +1,555 @@
+/// <summary>
+        /// 关联申报单编号
+        /// </summary>
+        public string FGlid
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 编号
+        /// </summary>
+        public string id
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 记录单编号
+        /// </summary>
+        public string recordNo
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 监督所名称
+        /// </summary>
+        public string supervisename
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 报检时间
+        /// </summary>
+        public DateTime inspectiontime
+        {
+            set;
+            get;
+        }
+       
+        /// <summary>
+        /// 检疫时间
+        /// </summary>
+        public DateTime? quarantinetime
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 货主姓名
+        /// </summary>
+        public string shippername
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 联系电话
+        /// </summary>
+        public string teltphone
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 身份证号码
+        /// </summary>
+        public string idcardnum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 养殖场名字
+        /// </summary>
+        public string farmsnme
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 检疫地点
+        /// </summary>
+        public string quarantineaddress
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 动物种类
+        /// </summary>
+        public string animalsort
+        {
+            set;
+            get;
+        }
+
+
+        /// <summary>
+        /// 数量
+        /// </summary>
+        public int? animalnum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用【省】
+        /// </summary>
+        public string startaddress
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用【市】
+        /// </summary>
+        public string startaddress1
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用【县】
+        /// </summary>
+        public string startaddress2
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用【乡】
+        /// </summary>
+        public string startaddress3
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用【养殖场】
+        /// </summary>
+        public string startaddress4
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用【类型】
+        /// </summary>
+        public string startaddress5
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 启用地址详细
+        /// </summary>
+        public string rqydzxx
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达地址详细
+        /// </summary>
+        public string rdddzxxs
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【省】
+        /// </summary>
+        public string rdddzxx
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【市】
+        /// </summary>
+        public string rdddzxx1
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【县】
+        /// </summary>
+        public string rdddzxx2
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【乡】
+        /// </summary>
+        public string rdddzxx3
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【养殖场】
+        /// </summary>
+        public string rdddzxx4
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【类型】
+        /// </summary>
+        public string rdddzxx5
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 运载工具牌号
+        /// </summary>
+        public string toolid
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 《种畜禽生产经营许可证》
+        /// </summary>
+        public string zxqsc
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 发证单位
+        /// </summary>
+        public string fzdw
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 编号
+        /// </summary>
+        public string bhid
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 《跨省引进乳用种用动物检疫审批表》审批单位
+        /// </summary>
+        public string spdw
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 审批表编号
+        /// </summary>
+        public string spbhb
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 关联跨省引进乳用种用动物检疫审批表id
+        /// </summary>
+        public int glid
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 经强制免疫并在有效期内
+        /// </summary>
+        public string qzmy
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 养殖档案
+        /// </summary>
+        public string recordrule
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 耳标佩戴是否符合规定
+        /// </summary>
+        public string logorule
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 养殖场疫情(六个月内）
+        /// </summary>
+        public string outbreak
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 《动物防疫条件合格证》
+        /// </summary>
+        public string dwtjhgz
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 临床检查
+        /// </summary>
+        public string clinical
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 是否疫区
+        /// </summary>
+        public string eridemicarea
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 其他
+        /// </summary>
+        public string other
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// ?
+        /// </summary>
+        public string laboratory
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 法定检疫对象实验室检测情况   
+        /// </summary>
+        public string situation
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 动物检疫合格证明编号
+        /// </summary>
+        public string code
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 检疫处理通知单编号
+        /// </summary>
+        public string jyclcard
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 一般处理
+        /// </summary>
+        public string general
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 一般处理数量
+        /// </summary>
+        public int harmlesnums
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 无害化处理
+        /// </summary>
+        public string harmless
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 无害化处理数量
+        /// </summary>
+        public int? harmlesnum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 是否法定检疫对象(1：是 0：否)
+        /// </summary>
+        public string legal
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 其它(1：是 0：否)
+        /// </summary>
+        public string otherObj
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 法定检疫对象数量
+        /// </summary>
+        public int? legalnum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 其它对象数量
+        /// </summary>
+        public int? otherNum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 兽医签字
+        /// </summary>
+        public string vetname
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 是否符合检疫规定
+        /// </summary>
+        public string quarantinerule
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 申报单id
+        /// </summary>
+        public string inspId
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 备注
+        /// </summary>
+        public string remark
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 合格数量
+        /// </summary>
+        public int? qualifiedNum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 单位
+        /// </summary>
+        public string runit
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 货主签字
+        /// </summary>
+        public string rhzqz
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 时间
+        /// </summary>
+        public DateTime? rhzdate
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 官方兽医签字时间
+        /// </summary>
+        public DateTime? Gftime
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 单位
+        /// </summary>
+        public string QDWDanWei
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 小时1
+        /// </summary>
+        public string dr
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 小时2
+        /// </summary>
+        public string dr1
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 小时3
+        /// </summary>
+        public string dr2
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 小时4
+        /// </summary>
+        public string dr3
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 用途
+        /// </summary>
+        public string myuse
+        {
+            set;
+            get;
+        }

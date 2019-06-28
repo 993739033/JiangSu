@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/tl_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <TableRow>
+
+            <TextView
+                style="@style/TextView_style"
+                android:minHeight="50dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="病死动物类型"
+                />
+
+
+
+            <TextView
+                android:minHeight="50dp"
+                android:layout_width="0dp"
+                style="@style/TextView_style"
+                android:layout_weight="1"
+                android:text="死亡数"
+                />
+
+
+
+            <TextView
+                android:minHeight="50dp"
+                style="@style/TextView_style"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="参保数"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_anim_detil"
+           >
+
+
+            <EditText
+                style="@style/EditText_style"
+                android:id="@+id/spinner_deadth_type"
+                android:text="猪"
+                android:drawableRight="@drawable/drop_down_drawable"
+                android:layout_width="0dp"
+                android:focusable="false"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+
+
+            <EditText
+                style="@style/EditText_style"
+                android:id="@+id/et_deadth_number"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="5"
+                android:text="0" />
+
+
+            <EditText
+                style="@style/EditText_style"
+                android:id="@+id/et_insured_number"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="5"
+                android:text="0" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tv_row_anim_detil_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/cuxian" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="增加"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

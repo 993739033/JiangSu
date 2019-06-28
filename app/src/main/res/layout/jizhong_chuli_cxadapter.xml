@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_row_anim_detil"
+        android:tag="notRequired">
+
+        <EditText
+            style="@style/EditText_style"
+            android:id="@+id/tv_anim_type"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/drop_down_focus"
+            android:layout_width="0dp"
+            android:focusable="false"
+            android:layout_weight="1"
+            />
+
+
+        <EditText
+            style="@style/EditText_style"
+            android:id="@+id/tv_deadth"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:layout_width="0dp"
+        />
+
+
+        <EditText
+            style="@style/EditText_style"
+            android:id="@+id/et_weight"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:focusable="false"
+            android:layout_marginRight="20dp"
+           />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyw.jiangsu.activity.supervision.DoubleRandomOnePublicPrintActivity">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:id="@+id/SV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/Layout_style">
+
+                <ImageView
+                    android:id="@+id/img_4"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/corporate_name" />
+
+                <TextView
+
+                    android:id="@+id/tv_4"
+                    style="@style/TextView_style_relayout"
+                    android:layout_toRightOf="@+id/img_4"
+                    android:text="企业名称" />
+
+                <EditText
+                    android:focusable="false"
+                    android:id="@+id/et_qy_name"
+                    style="@style/EditText_style_relayout"
+                    android:layout_marginLeft="58dp"
+                    android:layout_toRightOf="@+id/tv_4" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/Line_style" />
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                style="@style/Layout_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/img_36"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/tv_35"
+                    style="@style/TextView_style_relayout"
+                    android:layout_toRightOf="@+id/img_36"
+                    android:text="检查时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_jcsj"
+                    style="@style/TextView_style_relayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tv_35"
+                    android:drawablePadding="50dp"
+                    android:drawableRight="@drawable/selector_choose_time"
+                    android:gravity="right|center"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    style="@style/Layout_style"
+                    >
+                    <TextView
+                        android:drawableRight="@drawable/required"
+                        android:drawableLeft="@drawable/illegal_facts"
+                        style="@style/TextView_style"
+                        android:drawablePadding="10dp"
+                        android:text="缺陷项目" />
+
+                </LinearLayout>
+                <View style="@style/Line_style" />
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_18"
+                        style="@style/TextView_style"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:text="检查组按照国家有关法律法规及相关标准要求，"
+                        android:textColor="@color/textColor_gary" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        style="@style/Layout_style"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+                        <TextView
+                            android:gravity="left"
+                            android:id="@+id/tv_20"
+                            style="@style/TextView_style"
+                            android:layout_alignBottom="@+id/tv_18"
+                            android:layout_alignParentLeft="true"
+                            android:text="发现不符合要求的"
+                            android:textColor="@color/textColor_gary"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/et_sum"
+                            android:gravity="center"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tv_18"
+                            android:layout_toRightOf="@+id/tv_20" />
+                        <TextView
+                            android:id="@+id/tv_222"
+                            style="@style/TextView_style"
+                            android:layout_alignBottom="@+id/tv_18"
+                            android:layout_alignParentLeft="true"
+                            android:text="事项"
+                            android:textColor="@color/textColor_gary"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:textColor="@color/textColor_gary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="（详见检查记录表），"
+                        />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor_gary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请在"
+                            />
+                        <TextView
+                            android:id="@+id/tv_zg_time"
+                            style="@style/EditText_style"
+                            android:drawableRight="@drawable/drop_down_drawable"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="请选择"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            />
+                        <TextView
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor_gary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="前完成整改。"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_34"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/veterinarian" />
+
+                    <TextView
+                        android:drawableRight="@drawable/required"
+                        android:id="@+id/tv_34"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_34"
+                        android:text="检查组成员签名"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/et_zy_name"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_34"
+                        />
+
+
+                </RelativeLayout>
+                <View style="@style/Line_style" />
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_39"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/tv_39"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_39"
+                        android:text="签名时间" />
+
+
+                    <TextView
+                        android:id="@+id/tv_sign_time_1"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_39"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/selector_choose_time"
+                        android:gravity="right|center"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                android:layout_marginTop="10dp"
+                style="@style/Layout_style"
+                >
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/veterinarian" />
+
+                <TextView
+                    android:drawableRight="@drawable/required"
+                    android:id="@+id/tv_2"
+                    style="@style/TextView_style_relayout"
+                    android:layout_toRightOf="@+id/img_2"
+                    android:text="市观察员签名"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_sjcy_name"
+                    style="@style/EditText_style_relayout"
+                    android:layout_toRightOf="@+id/tv_2"
+                    />
+
+
+            </RelativeLayout>
+                <View style="@style/Line_style" />
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_44"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/tv_44"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_44"
+                        android:text="签名时间" />
+
+
+                    <TextView
+                        android:id="@+id/tv_sign_time_2"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_44"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/selector_choose_time"
+                        android:gravity="right|center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/Layout_style"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_3"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/veterinarian" />
+
+                    <TextView
+                        android:drawableRight="@drawable/required"
+                        android:id="@+id/tv_3"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_3"
+                        android:text="企业负责人签名"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/et_qyfzr_name"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_3"
+                        />
+
+
+                </RelativeLayout>
+                <View style="@style/Line_style" />
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_33"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/tv_33"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_33"
+                        android:text="签名时间" />
+
+
+                    <TextView
+                        android:id="@+id/tv_sign_time_3"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_33"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/selector_choose_time"
+                        android:gravity="right|center"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/img_18"
+                        android:text="带"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/tv_17"
+                        android:background="@drawable/required" />
+
+                    <TextView
+                        android:id="@+id/tv_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="14dp"
+                        android:text="为必填项"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btn_print"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

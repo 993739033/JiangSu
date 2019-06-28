@@ -1,0 +1,103 @@
+/// <summary>
+//代理申报
+        /// 关联ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 畜主姓名
+        /// </summary>
+        public string Fxzxm { get; set; }
+
+        /// <summary>
+        /// 地址
+        /// </summary>
+        public string Fxxdz { get; set; }
+
+        /// <summary>
+        /// 养殖场类型
+        /// </summary>
+        public string Fyzclx { get; set; }
+
+        /// <summary>
+        /// 现存栏量
+        /// </summary>
+        public int Fxcll { get; set; }
+
+        /// <summary>
+        /// 申报日期
+        /// </summary>
+        public DateTime Fsbrq { get; set; }
+
+        /// <summary>
+        /// 单位
+        /// </summary>
+        public string Fdw1 { get; set; }
+
+        /// <summary>
+        /// 病死动物种类
+        /// </summary>
+        public string Fbsdwzl { get; set; }
+
+        /// <summary>
+        /// 死亡数
+        /// </summary>
+        public int Fsws { get; set; }
+
+        /// <summary>
+        /// 参保数
+        /// </summary>
+        public int Fcbs { get; set; }
+
+        /// <summary>
+        /// 耳标号
+        /// </summary>
+        public string QDWErBiaoHao { get; set; }
+
+        /// <summary>
+        /// 疑似病因
+        /// </summary>
+        public string Fysswyy { get; set; }
+
+        /// <summary>
+        /// 非正常死亡
+        /// </summary>
+        public string Fsiwh { get; set; }
+
+        /// <summary>
+        /// 处理方式
+        /// </summary>
+        public string Fclfs { get; set; }
+
+        /// <summary>
+        /// 移送时间
+        /// </summary>
+        public DateTime Fyssj { get; set; }
+
+        /// <summary>
+        /// 病死畜禽移送收集点
+        /// </summary>
+        public string Fsjd { get; set; }
+
+        /// <summary>
+        /// 处理方式2
+        /// </summary>
+        public string Fclfs2 { get; set; }
+
+        /// <summary>
+        /// 畜主/养殖场负责人签名
+        /// </summary>
+        public string Fqm { get; set; }
+
+        /// <summary>
+        /// 官方兽医签字
+        /// </summary>
+        public string Fgfsyqz { get; set; }
+        /// <summary>
+        /// 身份证号
+        /// </summary>
+        public string Fsfzh { get; set; }
+        /// <summary>
+        /// 一卡通号
+        /// </summary>
+        public string fykth { get; set; }

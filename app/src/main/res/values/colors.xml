@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="disabled_color">#44000000</color>
+    <color name="error_color">#E7492E</color>
+    <!--viewfindview-->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!--this-->
+    <color name="titleBarBg">#19a4ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="table">#CCCCCC</color>
+    <color name="cuxian">#868686</color>
+    <color name="xixian">#6FADAD</color>
+
+    <color name="common_color">#000000</color>
+    <color name="common_title_color">#000000</color>
+    <color name="common_edit_color">#000000</color>
+    <color name="common_edit_hint_color">#000000</color>
+    <color name="hint">#0000FF</color>
+    <color name="bule1">#ffFF0000</color>
+    <color name="common_red">#ffFF0000</color>
+    <color name="bule">#ff18b4ed</color>
+    <color name="base">#44000000</color>
+    <color name="floatingLabel">#00FF00</color>
+    <color name="arrowColor">#868686</color>
+    <color name="chuxian">#868686</color>
+    <color name="whtie">#ffffff</color>
+    <color name="tab_text_color">#ff6060</color>
+    <color name="adressdialog_list_text_color">#f90f0f</color>
+    <color name="transparent">#00000000</color>
+    <!--界面布局颜色-->
+    <color name="background">#F0F0F0</color>
+    <color name="textColor_gary">#666666</color>
+
+    <color name="gary1">#888888</color>
+    <color name="bule2">#008bfe</color>
+    <color name="green">#00AA90</color>
+    <color name="dark_grey">#666666</color>
+    <color name="orange">#ff8f2c</color>
+</resources>

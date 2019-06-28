@@ -1,0 +1,14 @@
+/// <summary>
+    /// 无害化收集人员上门收集
+    /// </summary>
+    public class APP_SJQR    {
+        /// <summary>
+        /// 图片数组
+        /// </summary>
+        public string len { get; set; }
+
+        /// <summary>
+        /// 关联ID
+        /// </summary>
+        public int Glid { get; set; }
+    }

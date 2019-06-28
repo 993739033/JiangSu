@@ -1,0 +1,108 @@
+﻿/// <summary>
+        /// 类型 
+        /// </summary>
+        public string FType
+        { get; set; }
+        /// <summary>
+        /// 关联申报单id
+        /// </summary>
+        public int FGlid
+        { get; set; }
+        /// <summary>
+        /// 编号
+        /// </summary>
+        public string NNumber
+        { get; set; }
+        /// <summary>
+        /// 处理单位
+        /// </summary>
+        public string NDanWei
+        { get; set; }
+        /// <summary>
+        /// 不合格动物及动物产品名称
+        /// </summary>
+        public string NName
+        { get; set; }
+        /// <summary>
+        /// 处理依据
+        /// </summary>
+        public string NTiaoLi
+        { get; set; }
+        /// <summary>
+        /// 处理意见
+        /// </summary>
+        public string NChuLi
+        { get; set; }
+        /// <summary>
+        /// 处理意见1
+        /// </summary>
+        public string NChuLi1
+        { get; set; }
+        /// <summary>
+        /// 处理意见2
+        /// </summary>
+        public string NChuLi2
+        { get; set; }
+        /// <summary>
+        /// 处理意见3
+        /// </summary>
+        public string NChuLi3
+        { get; set; }
+        /// <summary>
+        /// 处理意见4
+        /// </summary>
+        public string NChuLi4
+        { get; set; }
+        /// <summary>
+        /// 兽医签字
+        /// </summary>
+        public string NVeterinary
+        { get; set; }
+        /// <summary>
+        /// 当事人签字
+        /// </summary>
+        public string NParties
+        { get; set; }
+        /// <summary>
+        /// 联系电话
+        /// </summary>
+        public string NDwPhone
+        { get; set; }
+        /// <summary>
+        /// 动物卫生监督所电话
+        /// </summary>
+        public string NDsrPhone
+        { get; set; }
+        /// <summary>
+        /// 是否打印,不需要给他string?类型因为默认需要为已保存,已打印,已报废
+        /// </summary>
+        public string IsPrant
+        { get; set; }
+        public int SaveId//区分表
+        { get; set; }
+       
+        /// <summary>
+        /// 处理（动物/产品）种类
+        /// </summary>
+        public string FChuliType
+        { get; set; }
+        /// <summary>
+        /// 处理数量
+        /// </summary>
+        public float FChuliNum
+        { get; set; }
+        /// <summary>
+        /// 处理单位
+        /// </summary>
+        public string FChuliDanwei
+        { get; set; }
+        /// <summary>
+        /// 处理意见1---存第一处理意见1的第二行的打印时使用文本--新加字段
+        /// </summary>
+        public string NChuLi1txt
+        { get; set; }
+        /// <summary>
+        /// 处理意见2---存第二处理意见2的打印时使用文本--新加字段
+        /// </summary>
+        public string NChuLi2txt
+        { get; set; }

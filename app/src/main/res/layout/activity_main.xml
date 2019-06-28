@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:id="@+id/rl_empty"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/bt_retry"
+                android:text="加载失败\n点击重新加载"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                app:bb_badgesHideWhenActive="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.roughike.bottombar.BottomBar
+                android:layout_gravity="center"
+                android:id="@+id/bottom_bar"
+                app:bb_inActiveTabColor="#000000"
+                app:bb_activeTabColor="#2B9FFF"
+                app:bb_tabXmlResource="@xml/bottombar_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="@drawable/tabbg"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<com.wyw.jiangsu.view.ChangeColorIconWithTextView-->
+            <!--android:id="@+id/id_indicator_one"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--app:icon="@drawable/icon_home"-->
+            <!--app:NoDealWithInfoBean="首页"-->
+            <!--app:text_size="12sp" />-->
+
+        <!--<com.wyw.jiangsu.view.ChangeColorIconWithTextView-->
+            <!--android:id="@+id/id_indicator_two"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--app:icon="@drawable/icon_square"-->
+            <!--app:NoDealWithInfoBean="查询"-->
+            <!--app:text_size="12sp" />-->
+
+        <!--<com.wyw.jiangsu.view.ChangeColorIconWithTextView-->
+            <!--android:id="@+id/id_indicator_three"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--app:icon="@drawable/icon_more"-->
+            <!--app:NoDealWithInfoBean="更多"-->
+            <!--app:text_size="12sp" />-->
+
+        <!--<com.wyw.jiangsu.view.ChangeColorIconWithTextView-->
+        <!--android:id="@+id/id_indicator_four"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="5dp"-->
+        <!--app:icon="@drawable/ic_menu_allfriends"-->
+        <!--app:NoDealWithInfoBean="@string/tab_me"-->
+        <!--app:text_size="12sp" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

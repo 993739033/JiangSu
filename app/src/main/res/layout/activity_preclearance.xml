@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_preclearance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_anim_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动物检疫申报单" />
+
+    <Button
+        android:id="@+id/bt_anim_apply_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动物检疫申报单处理" />
+
+    <Button
+        android:id="@+id/bt_product_area_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动物产地检疫工作记录单" />
+
+    <Button
+        android:id="@+id/bt_other_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乳用、种用动物检疫工作记录单" />
+
+    <Button
+        android:id="@+id/bt_A_quarantine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动物A检疫证明" />
+
+    <Button
+        android:id="@+id/bt_B_quarantine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动物B检疫证明" />
+
+    <Button
+        android:id="@+id/bt_A_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="产品A检疫证明" />
+
+    <Button
+        android:id="@+id/bt_B_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="产品B检疫证明" />
+
+    <Button
+        android:id="@+id/bt_quarantine_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检疫处理通知单" />
+</LinearLayout>

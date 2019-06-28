@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <Button
+        android:id="@+id/btn_print"
+        style="@style/Button_style"
+        android:text="打印"/>
+
+    <Button
+        android:id="@+id/btn_print2"
+        style="@style/Button_style"
+        android:text="自定义打印"/>
+
+    <Button
+        android:id="@+id/btn_print3"
+        style="@style/Button_style"
+        android:text="打印2"/>
+
+</LinearLayout>

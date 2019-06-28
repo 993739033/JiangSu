@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/Layout_style"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/img_17"
+                style="@style/Image_style_relayout"
+                android:src="@drawable/star_time" />
+
+            <TextView
+                android:id="@+id/tv_16"
+                style="@style/TextView_style_relayout"
+                android:layout_toRightOf="@+id/img_17"
+                android:text="登记时间" />
+
+
+            <TextView
+                android:id="@+id/et_signdate"
+                style="@style/TextView_style_relayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_16"
+                android:drawableRight="@drawable/choose_time_focus"
+                android:gravity="center|left"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#d8d8d8" />
+
+        <RelativeLayout style="@style/Layout_style">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/Image_style_relayout"
+                android:src="@drawable/cause" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/TextView_style_relayout"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="案由" />
+
+            <EditText
+                android:id="@+id/et_anyou"
+                style="@style/EditText_style_relayout"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/tv_3"
+                android:focusable="false"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#d8d8d8" />
+
+
+        <RelativeLayout style="@style/Layout_style">
+
+            <ImageView
+                android:id="@+id/img_7"
+                style="@style/Image_style_relayout"
+                android:src="@drawable/source" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                style="@style/TextView_style_relayout"
+                android:layout_marginRight="28dp"
+                android:layout_toRightOf="@+id/img_7"
+                android:text="来源" />
+
+            <TextView
+                android:id="@+id/tv_source"
+                style="@style/TextView_style_relayout"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_5"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/drop_down_focus"
+                android:gravity="right|center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#d8d8d8" />
+
+        <RelativeLayout style="@style/Layout_style">
+
+            <ImageView
+                android:id="@+id/img_8"
+                style="@style/Image_style_relayout"
+                android:src="@drawable/case_type" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                style="@style/TextView_style_relayout"
+                android:layout_marginRight="28dp"
+                android:layout_toRightOf="@+id/img_8"
+                android:text="案件类型" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/TextView_style_relayout"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_8"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/drop_down_focus"
+                android:gravity="right|center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#d8d8d8" />
+    </LinearLayout>
+
+
+</LinearLayout>

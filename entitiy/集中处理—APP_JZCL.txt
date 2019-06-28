@@ -1,0 +1,53 @@
+	/// <summary>
+   	 /// 集中处理
+    	/// </summary>
+
+	/// <summary>
+        /// 图片数组
+        /// </summary>
+        public string len { get; set; }
+
+        /// <summary>
+        /// 申报关联ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 死亡数
+        /// </summary>
+        public int Fsws { get; set; }
+
+        /// <summary>
+        /// 参保数
+        /// </summary>
+        public int Fcbs { get; set; }
+
+        /// <summary>
+        /// 疑似病因
+        /// </summary>
+        public string Fysswyy { get; set; }
+
+        /// <summary>
+        /// 以上是否符合
+        /// </summary>
+        public string SFFH { get; set; }
+
+        /// <summary>
+        /// 收集点ID
+        /// </summary>
+        public int SJID { get; set; }
+
+        /// <summary>
+        /// 收集点
+        /// </summary>
+        public string SJD { get; set; }
+
+ 	/// <summary>
+        /// 处理方式选择
+        /// </summary>
+        public string CLFSXZ { get; set; }
+
+        /// <summary>
+        /// 移送时间
+        /// </summary>
+        public DateTime YSSJ{ get; set; }

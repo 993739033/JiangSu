@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000" />
+
+        <com.wyw.jiangsu.view.photoview.PhotoView
+            android:id="@+id/parent_photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <ScrollView
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    >
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_q"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q"
+                            android:drawablePadding="3dp"
+                            android:text="养殖场\n(户)名称" />
+
+
+                        <EditText
+                            android:id="@+id/tv_name"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                       >
+
+                        <ImageView
+                            android:id="@+id/img_q_1"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/contact_way" />
+
+                        <TextView
+                            android:id="@+id/tv_q_1"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_1"
+                            android:drawablePadding="3dp"
+                            android:text="联系电话" />
+
+
+                        <EditText
+                            android:id="@+id/tv_lianxi_phone"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q_1"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_7"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/origin" />
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="28dp"
+                            android:layout_toRightOf="@+id/img_7"
+                            android:text="地址" />
+
+                        <TextView
+                            android:id="@+id/tv_addr"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_5"
+                            android:drawablePadding="12dp"
+                            android:drawableRight="@drawable/go_focus"
+                            android:gravity="right|center"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_2"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/animal_species" />
+
+                        <TextView
+                            android:id="@+id/tv_q_2"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_2"
+                            android:drawablePadding="3dp"
+                            android:text="场所类型" />
+
+
+                        <EditText
+                            android:id="@+id/tv_type"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q_2"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_3"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/quantity_unit" />
+
+                        <TextView
+                            android:id="@+id/tv_q_3"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_3"
+                            android:drawablePadding="3dp"
+                            android:text="现存栏量" />
+
+
+                        <EditText
+                            android:id="@+id/tv_number"
+                            android:focusable="false"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q_3"
+                            />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_4"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_q_4"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_4"
+                            android:drawablePadding="3dp"
+                            android:text="姓名" />
+
+
+                        <EditText
+                            android:id="@+id/name"
+                            style="@style/EditText_style_relayout"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_q_4"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_5"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/card_number" />
+
+                        <TextView
+                            android:id="@+id/tv_q_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_5"
+                            android:drawablePadding="3dp"
+                            android:text="身份证号" />
+
+
+                        <EditText
+                            android:id="@+id/tv_idCrad"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_q_5"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_q_6"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/card" />
+
+                        <TextView
+                            android:id="@+id/tv_q_6"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q_6"
+                            android:drawablePadding="3dp"
+                            android:text="一卡通号" />
+
+
+                        <EditText
+                            android:id="@+id/tv_icCrad"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_q_6"
+                            android:focusable="false" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_16"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time" />
+
+                        <TextView
+                            android:id="@+id/tv_15"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_16"
+                            android:text="申报时间" />
+
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_15"
+                            android:drawableRight="@drawable/choose_time_focus"
+                            android:gravity="right|center" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dcdcdc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:gravity="center"
+                            android:text="身份证和一卡通号照片"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_takephoto_ic_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/take_pictures" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.wyw.jiangsu.view.FullPhotoView
+                                android:id="@+id/photo_view_group_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="198dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="#f7f7f7"
+                                android:minHeight="170dp"
+                                android:scaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/EditText_style"
+                        android:layout_weight="1"
+                        android:text="病死动物类型"
+                        android:layout_marginRight="20dp"
+                        android:background="@null"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/EditText_style"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="      死亡数      " />
+
+
+                    <TextView
+                        style="@style/EditText_style"
+                        android:layout_weight="1"
+                        android:text="     重量(kg)    "
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/et_die_animal_type"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/et_deadth_number"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        />
+
+
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/et_zhongliang_death"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dcdcdc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:gravity="center"
+                            android:text="保单"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_takephoto_baodan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/take_pictures" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.wyw.jiangsu.view.FullPhotoView
+                                android:id="@+id/photo_view_baodan"
+                                android:layout_width="match_parent"
+                                android:layout_height="198dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="#f7f7f7"
+                                android:minHeight="170dp"
+                                android:scaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@+id/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_22"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/ear_label" />
+
+                        <TextView
+                            android:id="@+id/tv_22"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_22"
+                            android:text="病死畜禽耳标号" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_dead_erbiao"
+                        style="@style/StyleTextExr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="24dp"
+                        android:focusable="false"
+                        android:gravity="top|left"
+                        android:minHeight="160dp"
+                        android:padding="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽照片1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuqin1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuqin1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽照片2"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuqin2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuqin2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽照片3"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuqin3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuqin3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽照片4"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuqin4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuqin4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽和\n畜主合照1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuzhu1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuzhu1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽和\n畜主合照2"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuzhu2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuzhu2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽和\n畜主合照3"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuzhu3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuzhu3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#dcdcdc" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:background="#ffffff"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="11dp"
+                                    android:gravity="center"
+                                    android:text="病死畜禽和\n畜主合照4"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/img_takephoto_xuzhu4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@drawable/take_pictures" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.wyw.jiangsu.view.FullPhotoView
+                                        android:id="@+id/photo_view_xuzhu4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="123dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:adjustViewBounds="true"
+                                        android:background="#f7f7f7"
+                                        android:minHeight="170dp"
+                                        android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#dcdcdc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_guanfang"
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="兽医人员签字" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_shouyiqianming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="兽医签名"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <View style="@style/Line_style" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/img_shouyiqianming"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_shouyi"
+                    style="@style/Layout_style"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_q_21"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/quantity_unit" />
+
+                    <TextView
+                        android:id="@+id/tv_q_21"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_21"
+                        android:drawablePadding="3dp"
+                        android:text="核定数量" />
+
+
+                    <EditText
+                        android:id="@+id/et_check_number"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_21"
+                        android:focusable="false"
+                     />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    style="@style/Layout_style"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_q_22"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/quantity_unit" />
+
+                    <TextView
+                        android:id="@+id/tv_q_22"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_22"
+                        android:drawablePadding="3dp"
+                        android:text="入库数量" />
+
+
+                    <EditText
+                        android:id="@+id/et_ruku_number"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_22"
+                        android:focusable="false"
+                        />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dcdcdc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:gravity="center"
+                            android:text="入场确认"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_takephoto_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/take_pictures" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.wyw.jiangsu.view.FullPhotoView
+                                android:id="@+id/photo_view_confim"
+                                android:layout_width="match_parent"
+                                android:layout_height="198dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="#f7f7f7"
+                                android:minHeight="170dp"
+                                android:scaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="畜主/养殖场负责人签名" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+
+                    <View style="@style/Line_style" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/img_principal_signature"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="收集人员签名" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="兽医签名"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <View style="@style/Line_style" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/img_collection_person"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tv_ll_shouj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_shouji"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:text="官方兽医签字" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wyw.jiangsu.view.FullPhotoView
+                            android:id="@+id/iv_guanfang_shouyi"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <View style="@style/Line_style" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

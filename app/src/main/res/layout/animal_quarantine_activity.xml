@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <ScrollView
+            android:id="@+id/scrollV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/quarantine_certificate_number"
+                        android:drawablePadding="10dp"
+                        android:text="有效《跨省引进乳用种用动物检疫审批表》" />
+
+                    <TextView
+                        android:id="@+id/et_shenpibiao"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:id="@+id/lin_take_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dcdcdc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:gravity="center"
+                            android:text="审批表"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/take_pictures" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.wyw.jiangsu.view.FullPhotoView
+                                android:id="@+id/photo_view_group_photo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#f7f7f7"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:minHeight="170dp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#dcdcdc" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Line_style" />
+
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="申报处理结果"
+                        android:drawableLeft="@drawable/examination_approval"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/et_shouli"
+                        style="@style/TextView_style"
+                        android:focusable="false"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:id="@+id/ll_livestock_permission"
+                    style="@style/Layout_style"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/quarantine_certificate_number"
+                        android:drawablePadding="10dp"
+                        android:text="有效《种畜禽\n生产经营许可证》" />
+
+                    <TextView
+                        android:id="@+id/et_xukezheng"
+                        style="@style/TextView_style"
+                        android:focusable="false"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="申报单编号"
+                        android:drawableLeft="@drawable/declaration_number"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/et_bianhao"
+                        style="@style/TextView_style"
+                        android:focusable="false"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:drawableLeft="@drawable/animal_species"
+                        android:drawablePadding="10dp"
+                        android:text="申报类型:" />
+
+                    <TextView
+                        android:id="@+id/et_appley_type"
+                        style="@style/TextView_style"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:text="动物" />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawableLeft="@drawable/agent_name"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="申报人名称:" />
+
+                    <TextView
+                        android:id="@+id/et_user_name"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/contact_way_3"
+                            android:drawablePadding="10dp"
+                            android:text="联系电话:" />
+
+                        <TextView
+                            android:id="@+id/et_user_phone"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:focusable="false" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:id="@+id/ll_anim_kand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/animal_species"
+                            android:drawablePadding="10dp"
+                            android:text="动物种类:" />
+
+                        <TextView
+                            android:id="@+id/et_anim_type"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <View
+                        style="@style/Line_style" />
+                    <LinearLayout
+                        android:id="@+id/ll_donator_anim"
+                        style="@style/Layout_style"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/animal_species"
+                            android:drawablePadding="10dp"
+                            android:text="供体动物种类:" />
+
+                        <TextView
+                            android:id="@+id/et_donator_anim_kind"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View
+                        style="@style/Line_style" />
+                    <LinearLayout
+                        android:id="@+id/ll_anim_product"
+                        style="@style/Layout_style"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/animal_species"
+                            android:drawablePadding="10dp"
+                            android:text="动物产品种类:" />
+
+                        <TextView
+                            android:id="@+id/et_anim_product_kind"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawableLeft="@drawable/quantity_unit"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="10dp"
+                        android:text="数量:" />
+
+                    <TextView
+                        android:id="@+id/et_anim_count"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="只"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:id="@+id/ll_yongtu_laiyuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_use"
+                        style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawableLeft="@drawable/source_uses"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="用途:" />
+
+                        <TextView
+                            android:id="@+id/et_purpose"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_laiyuan"
+                        style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawableLeft="@drawable/source"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="来源:" />
+
+                        <TextView
+                            android:id="@+id/et_source"
+                            style="@style/TextView_style"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:id="@+id/lin_source_extra"
+                    style="@style/Layout_style"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:drawableLeft="@drawable/quarantine_certificate_number"
+                        android:id="@+id/tv_source_title"
+                        style="@style/TextView_style"
+                        android:layout_width="120dp"
+                        android:layout_marginRight="5dp"
+                        android:singleLine="false"
+                        android:text="野生动物驯养繁殖许可证号:" />
+
+                    <EditText
+                        android:id="@+id/et_source_extra"
+                        style="@style/TextView_style"
+                        android:focusable="false" />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawableLeft="@drawable/start_place"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="起运地类别:" />
+
+                    <TextView
+                        android:id="@+id/et_start_type"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawableLeft="@drawable/origin"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="12dp"
+                            android:text="起运地:" />
+
+                        <TextView
+                            android:id="@+id/et_start_place"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="详情："
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/fill_add" />
+                    <TextView
+                        android:id="@+id/et_start_village"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                    <!-- <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         android:text="乡(镇)"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/common_text_size" />
+
+                     <EditText
+                         android:id="@+id/et_start_other"
+                         style="@style/StyleEditExr"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_weight="1"
+                         android:focusable="false"
+                         android:gravity="center"
+                         android:textColor="@color/common_edit_color"
+                         android:textColorHint="@color/common_edit_hint_color"
+                         android:textSize="@dimen/common_edit_size" />-->
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawableLeft="@drawable/arrive_at"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="到达地类别:" />
+
+                    <TextView
+                        android:id="@+id/et_end_type"
+                        style="@style/TextView_style"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawableLeft="@drawable/origin"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="12dp"
+                            android:text="到达地:" />
+
+                        <TextView
+                            android:id="@+id/et_end_place"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawablePadding="10dp"
+                        android:text="详情："
+                        android:drawableLeft="@drawable/fill_add" />
+                    <TextView
+                        android:id="@+id/et_end_village"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="乡(镇)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <EditText
+                        android:id="@+id/et_end_other"
+                        style="@style/StyleEditExr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:textColor="@color/common_edit_color"
+                        android:textColorHint="@color/common_edit_hint_color"
+                        android:textSize="@dimen/common_edit_size" />-->
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="报检时间："
+                        android:drawableLeft="@drawable/time"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_inspection_time"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawableLeft="@drawable/time_shipment"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="启运时间:" />
+
+                    <TextView
+                        android:id="@+id/tv_shipment_time"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <LinearLayout style="@style/Layout_style">
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="耳标号："
+                        android:drawableLeft="@drawable/ear_label"
+                        android:drawablePadding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tv_erbiao"
+                        style="@style/TextView_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="160dp" />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style" />
+                <!--<LinearLayout style="@style/Layout_style">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/TextView_style"-->
+                        <!--android:drawablePadding="10dp"-->
+                        <!--android:drawableLeft="@drawable/fill_add"-->
+                        <!--android:text="申报人签名:" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shengbaoren_qinazhi"-->
+                        <!--style="@style/TextView_style"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+                <View
+                    style="@style/Line_style" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="　　申报人依照《中华人民共和国动物防疫法》、《动物检疫管理办法》有关规定，特申报检疫。并对所填信息的真实性、完整性负责，如与事实不符，官方兽医有权终止检疫，由此导致的后果由申报人自行负责。"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_shouji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/xixian" />
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawableLeft="@drawable/declaration_type"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="申报处理结果:" />
+
+                        <TextView
+                            android:id="@+id/et_chuli_jieguo"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="拟派员于"
+                            android:drawableRight="@drawable/required"/>
+
+                        <TextView
+                            android:id="@+id/et_nipai_time"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:enabled="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/required"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:text="到：" />
+
+                        <EditText
+                            android:id="@+id/et_place"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:enabled="false" />
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="实施检疫。" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="经办人姓名"
+                            android:drawableLeft="@drawable/agent_name"
+                            android:drawableRight="@drawable/required"/>
+
+                        <TextView
+                            android:id="@+id/et_operator_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            style="@style/TextView_style" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="经办人电话"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/contact_way_3"
+                            android:drawableRight="@drawable/required" />
+
+                        <TextView
+                            android:id="@+id/et_operator_phone"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Layout_style">
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:text="处理时间"
+                            android:drawableLeft="@drawable/handling_time"/>
+
+                        <TextView
+                            android:id="@+id/et_chuli_time"
+                            style="@style/TextView_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--<LinearLayout
+                    style="@style/Layout_style"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="申报单编号"
+                        android:drawableLeft="@drawable/declaration_number"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_et_bianhao"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                   style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="申报类型"
+                        android:drawableLeft="@drawable/animal_species"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_appley_type"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="有效《跨省引进乳用种用动物检疫审批表》"
+                        android:drawableLeft="@drawable/quarantine_certificate_number"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_yes"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="申报人姓名"
+                        android:drawableLeft="@drawable/agent_name"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/et_user_name"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="联系电话"
+                        android:drawableLeft="@drawable/contact_way_3"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_user_phone"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="动物种类"
+                        android:drawableLeft="@drawable/animal_species"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_anim_type"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="数量"
+                        android:drawableLeft="@drawable/quantity_unit"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_anim_count"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="用途"
+                        android:drawableLeft="@drawable/source_uses"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_purpose"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="来源"
+                        android:drawableLeft="@drawable/source"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_source"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="起运地类别"
+                        android:drawableLeft="@drawable/start_place"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_start_type"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="起运地"
+                        android:drawableLeft="@drawable/origin"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="12dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_start_place"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="养殖场名称"
+                        android:drawableLeft="@drawable/farm_name"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_name_start"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="到达地类别"
+                        android:drawableLeft="@drawable/arrive_at"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_end_type"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="到达地"
+                        android:drawableLeft="@drawable/origin"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="12dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_end_place"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="养殖场名称"
+                        android:drawableLeft="@drawable/farm_name"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_name_end"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="报检时间"
+                        android:drawableLeft="@drawable/time"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_inspection_time"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="起运时间"
+                        android:drawableLeft="@drawable/time_shipment"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_time_start"
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="耳标号"
+                        android:drawableLeft="@drawable/ear_label"
+                        android:drawablePadding="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/et_erbiao"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:editable="false"
+                        android:background="@drawable/input"
+                        />
+                    <TextView
+                        style="@style/TextView_style"
+                        android:gravity="right|center_vertical"
+                        android:text="申报人依照《中华人民共和国动物防疫法》、《动物检疫管理办法》有关规定，特申报检疫。并对所填信息的真实性、完整性负责，如与事实不符，官方兽医有权终止检疫，由此导致的后果由申报人自行负责。"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/sqt"/>
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="申报处理结果"
+                        android:drawableLeft="@drawable/declaration_type"
+                        android:drawablePadding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/rb_yes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="受理"
+                            android:button="@drawable/selector_radiobtn"
+                            />
+                        <RadioButton
+                            android:id="@+id/rb_no"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_radiobtn"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                style="@style/Layout_style">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <TextView
+                    style="@style/TextView_style"
+                    android:drawablePadding="10dp"
+                    android:text="拟派员于"
+                    android:drawableRight="@drawable/required"
+                    />
+                        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/tv_time_nipai"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/choose_time_normal"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawablePadding="10dp"
+                        android:text="到"
+                        android:drawableRight="@drawable/required"
+                        />
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_address_nipai"
+                            style="@style/TextView_style"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/fill_add"
+                            />
+                        <TextView
+                            style="@style/TextView_style"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="实施检疫。"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_style">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextView_style"
+                        android:drawablePadding="10dp"
+                        android:text="不受理理由"
+                        android:drawableRight="@drawable/required"
+                        />
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_bushouli"
+                            style="@style/TextView_style"
+                            android:minHeight="80dp"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/fill_add"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+
+                <LinearLayout
+                   style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="经办人姓名"
+                            android:drawableLeft="@drawable/agent_name"
+                            android:drawableRight="@drawable/required"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_operator_name"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="经办人电话"
+                            android:drawableLeft="@drawable/contact_way_3"
+                            android:drawableRight="@drawable/required"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_operator_phone"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                <View
+                    style="@style/Line_style"/>
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:text="处理时间"
+                        android:drawableLeft="@drawable/handling_time"
+                        />
+                    <TextView
+                        android:id="@+id/tv_chuli_time"
+                        style="@style/TextView_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:drawableRight="@drawable/choose_time_normal"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:orientation="horizontal"
+                    android:gravity="right|center_vertical"
+                    android:background="#efefef"
+                    >
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="带"
+                        android:drawableRight="@drawable/required"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        />
+                    <TextView
+                        style="@style/TextView_style"
+                        android:text="为必填项"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/bt_print"
+                    style="@style/Button_style"
+                    android:text="保存"
+                    />
+-->
+                <!--<Button-->
+                    <!--android:id="@+id/btn_print"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:background="@drawable/button"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="打印"-->
+                    <!--android:textSize="@dimen/common_text_size" />-->
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000" />
+
+        <com.wyw.jiangsu.view.FullPhotoView
+            android:id="@+id/parent_photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</FrameLayout>

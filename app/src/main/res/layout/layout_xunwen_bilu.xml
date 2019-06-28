@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+               >
+
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="true"
+                        android:text="选择案件" />
+
+                    <TextView
+                        android:id="@+id/bt_xuanze_wenjian"
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tv_5"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/go"
+                        android:gravity="right|center"
+                        android:textColor="#000000" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/img_16"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/tv_15"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_16"
+                        android:text="时间段" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/tv_15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/TextView_style_relayout"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:drawableRight="@drawable/choose_time_down"
+                            android:gravity="right|center" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_timefrom"
+                                style="@style/TextView_style_relayout"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:drawableRight="@drawable/drop_down2"
+                                android:gravity="right|center" />
+
+                            <TextView
+                                style="@style/TextView_style_relayout"
+                                android:text="至" />
+
+                            <TextView
+                                android:id="@+id/tv_timeto"
+                                style="@style/TextView_style_relayout"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:drawableRight="@drawable/drop_down2"
+                                android:gravity="right|center" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+             >
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_1"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/origin" />
+
+                    <TextView
+                        android:id="@+id/tv_q_1"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_1"
+                        android:drawableRight="@drawable/required"
+                        android:text="询问地点" />
+
+
+                    <EditText
+                        android:id="@+id/et_xunwen_didian"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_1" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_2"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/ask_authority" />
+
+                    <TextView
+                        android:id="@+id/tv_q_2"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_2"
+                        android:drawableRight="@drawable/required"
+                        android:text="询问机关" />
+
+
+                    <EditText
+                        android:id="@+id/et_xunwen_jiguan"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_2" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_5"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_5"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_5"
+                        android:text="询问人1" />
+
+
+                    <EditText
+                        android:id="@+id/et_xunwen_renyuan1"
+                        style="@style/EditText_style_relayout"
+                        android:layout_alignParentRight="false"
+                        android:layout_toLeftOf="@+id/bt_xunwen_renyuan"
+                        android:layout_toRightOf="@+id/tv_q_5"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_xunwen_renyuan"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/select_bg"
+                        android:text="询问人选择"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_6"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declaration_number" />
+
+                    <TextView
+                        android:id="@+id/tv_q_6"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_6"
+                        android:text="执法证件号1" />
+
+
+                    <EditText
+                        android:id="@+id/et_zhifa_zhengjianhao1"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_6"
+                        android:focusable="false" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_8"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_8"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_8"
+                        android:text="询问人2" />
+
+
+                    <EditText
+                        android:id="@+id/et_xunwen_renyuan2"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_8"
+                        android:focusable="false" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_9"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declaration_number" />
+
+                    <TextView
+                        android:id="@+id/tv_q_9"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_9"
+                        android:text="执法证件号2" />
+
+
+                    <EditText
+                        android:id="@+id/et_zhifa_zhengjianhao2"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_9"
+                        android:focusable="false" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_10"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_10"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_10"
+                        android:drawableRight="@drawable/required"
+                        android:text="记录人" />
+
+
+                    <EditText
+                        android:id="@+id/et_jiluren"
+                        android:layout_marginLeft="40dp"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_10" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_11"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/declarer" />
+
+                    <TextView
+                        android:id="@+id/tv_q_11"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_11"
+                        android:drawableRight="@drawable/required"
+                        android:text="被询问人" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_name"
+                        style="@style/EditText_style_relayout"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@+id/tv_q_11" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_12"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/age" />
+
+                    <TextView
+                        android:id="@+id/tv_q_12"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_12"
+                        android:drawableRight="@drawable/required"
+                        android:text="年龄" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_age"
+                        style="@style/EditText_style_relayout"
+                        android:layout_marginLeft="56dp"
+                        android:layout_toRightOf="@+id/tv_q_12"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_2"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/sex" />
+
+                    <TextView
+                        style="@style/TextView_style_relayout"
+                        android:layout_marginRight="71dp"
+                        android:layout_toRightOf="@+id/img_2"
+                        android:text="性别" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_sex_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="22dp"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/radiobutton_selector"
+                            android:text="男"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="40dp"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radiobutton_selector"
+                            android:text="女"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_13"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/contact_way" />
+
+                    <TextView
+                        android:id="@+id/tv_q_13"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_13"
+                        android:drawableRight="@drawable/required"
+                        android:text="联系电话" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_phone"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_13"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_14"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/card_number" />
+
+                    <TextView
+                        android:id="@+id/tv_q_14"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_14"
+                        android:drawableRight="@drawable/required"
+                        android:text="身份证号" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_id"
+                        style="@style/EditText_style_relayout"
+                        android:digits="0123456789Xx"
+                        android:inputType="number"
+                        android:layout_toRightOf="@+id/tv_q_14" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_15"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/work_units" />
+
+                    <TextView
+                        android:id="@+id/tv_q_15"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_15"
+                        android:drawableRight="@drawable/required"
+                        android:text="工作单位" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_danwei"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_15" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_16"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/position" />
+
+                    <TextView
+                        android:id="@+id/tv_q_16"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_16"
+                        android:drawableRight="@drawable/required"
+                        android:text="职务" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_work"
+                        style="@style/EditText_style_relayout"
+                        android:layout_marginLeft="58dp"
+                        android:layout_toRightOf="@+id/tv_q_16" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_17"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/origin" />
+
+                    <TextView
+                        android:id="@+id/tv_q_17"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_17"
+                        android:drawableRight="@drawable/required"
+                        android:text="住址" />
+
+
+                    <EditText
+                        android:id="@+id/et_beixunwen_adress"
+                        style="@style/EditText_style_relayout"
+                        android:layout_marginLeft="58dp"
+                        android:layout_toRightOf="@+id/tv_q_17" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+
+
+                <RelativeLayout style="@style/Layout_style">
+
+                    <ImageView
+                        android:id="@+id/img_q_18"
+                        style="@style/Image_style_relayout"
+                        android:src="@drawable/ask_authority" />
+
+                    <TextView
+                        android:id="@+id/tv_q_18"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/img_q_18"
+                        android:text="问:我们是" />
+
+
+                    <EditText
+                        android:id="@+id/et_zhifa_renyuan"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_q_18" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_style" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="#ffffff"
+                android:padding="18dp"
+                android:paddingBottom="19dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:text="执法人员（出示执法证件），现依法向你进行询问调查。你应当如实回答我们的询问并协助调查，作伪证要承担法律 责任，你听清楚了吗？"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Layout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Image_style_relayout"
+                        android:layout_gravity="right"
+                        android:background="@drawable/answer" />
+
+                    <EditText
+                        android:id="@+id/et_xunwen_bilu"
+                        android:layout_marginTop="5dp"
+                        style="@style/EditText_style"
+                        android:gravity="top|left"
+                        android:layout_width="match_parent"
+                        android:minHeight="80dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_conversation"
+                style="@style/StyleLinear"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/img_18"
+                    android:text="带"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_17"
+                    android:background="@drawable/required" />
+
+                <TextView
+                    android:id="@+id/tv_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="14dp"
+                    android:text="为必填项"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/bt_baocun"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="31dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="保存"
+                android:textColor="#fffefe"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

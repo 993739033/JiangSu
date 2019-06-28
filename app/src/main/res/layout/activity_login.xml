@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/top_logo_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/text_marginTop"
+            android:text="苏动e通"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/imgeView_marginTop"
+        android:src="@drawable/logo" />
+
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="525dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_subtitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginEnd="40dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="当前版本版本"-->
+            <!--android:textColor="#0099ff"-->
+            <!--android:textSize="12sp" />-->
+
+
+        <!--android:layout_alignLeft="@+id/tv_subtitle"-->
+        <!--android:layout_below="@+id/tv_subtitle"-->
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#0099ff"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/LinerLayout_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/LinerLayout_marginTop"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:drawableLeft="@drawable/login_account_selector"
+            android:drawablePadding="@dimen/et_drawablePadding"
+            android:hint="输入账号"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/et_paddingBottom"
+            android:singleLine="true"
+            android:textColorHint="#a9a9a9"
+            android:textSize="@dimen/et_login_sp" />
+
+
+        <EditText
+            android:id="@+id/etPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:drawableLeft="@drawable/login_password_selector"
+            android:drawablePadding="@dimen/et_drawablePadding"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/et2_paddingBottom"
+            android:paddingTop="@dimen/et2_paddingBottom"
+            android:singleLine="true"
+            android:textColorHint="#a9a9a9"
+            android:textSize="18sp"></EditText>
+
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/btn_maginTop"
+            android:background="@drawable/login_button"
+            android:text="登 录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/bt_registe"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/btn_password_maginTop"
+            android:background="@drawable/register_button"
+            android:onClick="regsite"
+            android:text="注册"
+            android:textColor="#248cec"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

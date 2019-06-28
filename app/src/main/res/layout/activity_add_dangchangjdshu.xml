@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_container"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <ScrollView
+            android:id="@+id/SV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    >
+                    <EditText
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="0dp"
+                        android:id="@+id/jf"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        style="@style/TextView_style_relayout"
+                        android:layout_toRightOf="@+id/jf"
+                        android:text="简罚（"
+                       />
+
+                    <EditText
+                        android:id="@+id/ajsj"
+                        android:layout_margin="0dp"
+                        android:layout_alignParentRight="false"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toRightOf="@+id/tv_1"
+                        android:layout_toLeftOf="@+id/tv_2"
+                        />
+
+                    <TextView
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_2"
+                        android:text="）"
+                      />
+
+                </RelativeLayout>
+                <View style="@style/Line_style" />
+                <RelativeLayout
+                    style="@style/Layout_style"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_hao"
+                        android:layout_margin="0dp"
+                        android:layout_alignParentRight="false"
+                        style="@style/EditText_style_relayout"
+                        android:layout_toLeftOf="@+id/tv_3"
+                         />
+
+                    <TextView
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_toLeftOf="@+id/chose"
+                        android:id="@+id/tv_3"
+                        style="@style/TextView_style_relayout"
+                        android:text="号"
+                      />
+
+                    <Button
+                        android:id="@+id/chose"
+                        android:layout_width="71dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/select_bg"
+                        android:text="选择案件"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        >
+                        <TextView
+                            android:drawableLeft="@drawable/information1"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="个人" />
+
+                    </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            style="@style/Image_style_relayout"
+                            android:id="@+id/img_4"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+
+                            style="@style/TextView_style_relayout"
+                            android:id="@+id/tv_4"
+                            android:layout_toRightOf="@+id/img_4"
+                            android:text="姓名"
+                            android:drawableRight="@drawable/required"
+                            />
+
+                        <EditText
+                            style="@style/EditText_style_relayout"
+                            android:id="@+id/et_name"
+                            android:layout_toRightOf="@+id/tv_4"
+                            android:layout_marginLeft="58dp"
+                            />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/sex" />
+
+                        <TextView
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="71dp"
+                            android:layout_toRightOf="@+id/img_2"
+                            android:text="性别" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_apply_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_apply_anim"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="22dp"
+                                android:button="@null"
+                                android:checked="true"
+                                android:drawableLeft="@drawable/radiobutton_selector"
+                                android:text="男"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_apply_material"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="40dp"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radiobutton_selector"
+                                android:text="女"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            style="@style/Image_style_relayout"
+                            android:id="@+id/img_6"
+                            android:src="@drawable/age" />
+
+                        <TextView
+
+                            style="@style/TextView_style_relayout"
+                            android:id="@+id/tv_6"
+                            android:layout_toRightOf="@+id/img_6"
+                            android:text="年龄"
+                            android:drawableRight="@drawable/required"
+                            />
+
+                        <EditText
+                            style="@style/EditText_style_relayout"
+                            android:id="@+id/age"
+                            android:layout_toRightOf="@+id/tv_6"
+                            android:layout_marginLeft="58dp"
+                            android:inputType="number"
+                            />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            style="@style/Image_style_relayout"
+                            android:id="@+id/img_7"
+                            android:src="@drawable/contact_way" />
+
+                        <TextView
+
+                            style="@style/TextView_style_relayout"
+                            android:id="@+id/tv_7"
+                            android:layout_toRightOf="@+id/img_7"
+                            android:text="电话"
+                            android:drawableRight="@drawable/required"
+                            />
+
+                        <EditText
+                            style="@style/EditText_style_relayout"
+                            android:id="@+id/phone"
+                            android:layout_toRightOf="@+id/tv_7"
+                            android:layout_marginLeft="58dp"
+                            android:inputType="number"
+                            />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_12"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/origin" />
+
+                        <TextView
+                            android:id="@+id/tv_10"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_12"
+                            android:drawableRight="@drawable/required"
+                            android:text="住址" />
+
+
+                        <TextView
+                            android:id="@+id/tv_zz_select"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/tv_10"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/go_down"
+                            android:gravity="right|center"
+                            android:text="请选择" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_13"
+                            style="@style/Image_style_relayout"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/fill_add" />
+
+                        <EditText
+                            android:id="@+id/et_xx_address"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/img_13"
+                            android:hint="填写详细住址"
+                          />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            style="@style/Image_style_relayout"
+                            android:id="@+id/img_9"
+                            android:src="@drawable/card_number" />
+
+                        <TextView
+
+                            style="@style/TextView_style_relayout"
+                            android:id="@+id/tv_9"
+                            android:layout_toRightOf="@+id/img_9"
+                            android:text="身份证号"
+                            android:drawableRight="@drawable/required"
+                            />
+
+                        <EditText
+                            style="@style/EditText_style_relayout"
+                            android:id="@+id/shenfennum"
+                            android:layout_toRightOf="@+id/tv_9"
+                            android:layout_marginLeft="58dp"
+                            android:inputType="number"
+                            android:digits="@string/filter_vcode"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        >
+                        <TextView
+                            android:drawableLeft="@drawable/info2"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="公司" />
+
+                    </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_11"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/corporate_name" />
+
+                        <TextView
+                            android:id="@+id/tv_11"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="14dp"
+                            android:layout_toRightOf="@+id/img_11"
+                            android:drawableRight="@drawable/required"
+                            android:text="公司名称" />
+
+                        <EditText
+                            android:id="@+id/gsname"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_11"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/et_user_phone" />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_14"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_33"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="14dp"
+                            android:layout_toRightOf="@+id/img_14"
+                            android:drawableRight="@drawable/required"
+                            android:text="公司代表人" />
+
+                        <EditText
+                            android:id="@+id/daibiaopeople"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_33"
+                           />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_16"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/origin" />
+
+                        <TextView
+                            android:id="@+id/tv_16"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_16"
+                            android:drawableRight="@drawable/required"
+                            android:text="公司地址" />
+
+
+                        <TextView
+                            android:id="@+id/tv_gs_select"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/tv_16"
+                            android:drawableRight="@drawable/go_down"
+                            android:gravity="right|center"
+                            android:layout_toRightOf="@+id/tv_16"
+                            android:text="请选择" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_17"
+                            style="@style/Image_style_relayout"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/fill_add" />
+
+                        <EditText
+                            android:id="@+id/et_gs_address"
+                            style="@style/EditText_style_relayout"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/img_17"
+                            android:hint="填写公司详细地址"
+                           />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_19"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/contact_way" />
+
+                        <TextView
+                            android:id="@+id/tv_19"
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="14dp"
+                            android:layout_toRightOf="@+id/img_19"
+                            android:drawableRight="@drawable/required"
+                            android:text="公司电话" />
+
+                        <EditText
+                            android:id="@+id/gsphone"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_19"
+                            android:inputType="number"
+                            />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        >
+                        <TextView
+                            android:drawableLeft="@drawable/illegal_facts"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="违法事实" />
+
+                    </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <LinearLayout
+                        android:layout_marginBottom="18dp"
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <EditText
+                        style="@style/EditText_style"
+                        android:id="@+id/wefashi"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="start" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        >
+                        <TextView
+                            android:drawableLeft="@drawable/content"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="处罚依据及内容" />
+
+                    </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <LinearLayout
+                        android:layout_marginBottom="18dp"
+                        style="@style/Layout_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            style="@style/EditText_style"
+                            android:id="@+id/chufayj"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lin_back"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        >
+                        <TextView
+                            android:drawableLeft="@drawable/illegal_facts"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="告知事项" />
+
+                    </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                     >
+
+                        <TextView
+                            android:id="@+id/tv_13"
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:layout_alignParentLeft="true"
+                            android:text="1.当事人应当对违法行为立即或在\n日内予以纠正"
+                            android:textColor="@color/textColor_gary" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_13"
+                            android:id="@+id/jiri"
+                            android:inputType="number" />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_18"
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:text="2.当事人必须在收到处罚决定书之日起15"
+                            android:textColor="@color/textColor_gary" />
+
+                        <LinearLayout
+                            style="@style/Layout_style"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/tv_20"
+                                style="@style/TextView_style"
+                                android:layout_alignBottom="@+id/tv_18"
+                                android:layout_alignParentLeft="true"
+                                android:text="日内持本决定书到"
+                                android:textColor="@color/textColor_gary"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/jnfakuan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_18"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@+id/tv_20" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor_gary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="缴纳罚款。逾期不缴每日按罚款数额的3％加处罚款"
+                             />
+                    </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_21"
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:text="3.对本处罚决定不服的，可以在收到本处"
+                            android:textColor="@color/textColor_gary" />
+
+                        <LinearLayout
+                            style="@style/Layout_style"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/tv_22"
+                                style="@style/TextView_style"
+                                android:layout_alignBottom="@+id/tv_21"
+                                android:layout_alignParentLeft="true"
+                                android:text="罚决定书之日起60日内向"
+                                android:textColor="@color/textColor_gary"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/renminzf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Layout_style"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/tv_23"
+                                style="@style/TextView_style"
+                                android:text="人民政府或"
+                                android:textColor="@color/textColor_gary"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/huo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            style="@style/Layout_style"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/tv_24"
+                                style="@style/TextView_style"
+                                android:text="申请行政复议;或者三个月内向"
+                                android:textColor="@color/textColor_gary"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/rmfy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/TextView_style"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor_gary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人民法院提起行政诉（讼）。"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/lin_back"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/Layout_style"
+                        >
+                        <TextView
+                            android:drawableLeft="@drawable/illegal_facts"
+                            style="@style/TextView_style"
+                            android:drawablePadding="10dp"
+                            android:text="执法人员基本情况" />
+                        </LinearLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_q"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_q"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_q"
+                            android:text="姓名" />
+
+
+                        <TextView
+                            android:id="@+id/zfryxm1"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_q"
+                         />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_25"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declaration_number" />
+
+                        <TextView
+                            android:id="@+id/tv_25"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_25"
+                            android:text="执法证件号" />
+
+
+                        <TextView
+                            android:id="@+id/zfzjh1"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_25"
+                            />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_26"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_26"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_26"
+                            android:text="姓名" />
+
+
+                        <TextView
+                            android:id="@+id/zfryxm2"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_26"
+                            />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_28"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declaration_number" />
+
+                        <TextView
+                            android:id="@+id/tv_28"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_28"
+                            android:text="执法证件号" />
+
+
+                        <TextView
+                            android:id="@+id/zhzh2"
+                            style="@style/EditText_style_relayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_28"
+                            />
+
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <ImageView
+                            android:id="@+id/img_29"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/execution" />
+
+                        <TextView
+                            style="@style/TextView_style_relayout"
+                            android:layout_marginRight="71dp"
+                            android:layout_toRightOf="@+id/img_29"
+                            android:text="是否立即执行" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_shi_anim"
+                                android:layout_width="wrap_content"
+                                android:minWidth="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="22dp"
+                                android:button="@null"
+                                android:checked="true"
+                                android:drawableLeft="@drawable/radiobutton_selector"
+                                android:text="是"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_fou_material"
+                                android:minWidth="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="40dp"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radiobutton_selector"
+                                android:text="否"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/img_36"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/time" />
+
+                        <TextView
+                            android:id="@+id/tv_35"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_36"
+                            android:text="执法时间" />
+
+
+                        <TextView
+                            android:id="@+id/tv_zfsj"
+                            style="@style/TextView_style_relayout"
+                            android:text="请选择"
+                            android:drawablePadding="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_35"
+                            android:drawableRight="@drawable/selector_choose_time"
+                            android:gravity="right|center" />
+
+                    </RelativeLayout>
+                    <View style="@style/Line_style" />
+                    <RelativeLayout
+                        style="@style/Layout_style"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_34"
+                            style="@style/Image_style_relayout"
+                            android:src="@drawable/declarer" />
+
+                        <TextView
+                            android:id="@+id/tv_34"
+                            style="@style/TextView_style_relayout"
+                            android:layout_toRightOf="@+id/img_34"
+                            android:text="当事人签收"
+                            android:drawableRight="@drawable/required"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/dsrqh"
+                            style="@style/EditText_style_relayout"
+                            android:layout_toRightOf="@+id/tv_34"
+                            />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/img_18"
+                        android:text="带"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/tv_17"
+                        android:background="@drawable/required" />
+
+                    <TextView
+                        android:id="@+id/tv_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="14dp"
+                        android:text="为必填项"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_baocun"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="31dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="保存"
+                    android:textColor="#fffefe"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

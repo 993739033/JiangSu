@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+    <include layout="@layout/view_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textViewReset"
+        style="@style/TextView_style"
+     android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:text="打印机操作"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/BTButton"
+        style="@style/Button_style"
+        android:layout_below="@+id/textViewReset"
+        android:onClick="bt_button_click"
+        android:text="扫描" />
+
+    <Button
+        android:id="@+id/ButtonLawEnforcementBill"
+        style="@style/Button_style"
+        android:layout_below="@+id/BTButton"
+        android:onClick="ButtonEnforcement_click"
+        android:text="打印" />
+    </RelativeLayout>
+</LinearLayout>

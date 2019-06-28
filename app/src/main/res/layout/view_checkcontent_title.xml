@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/Layout_style"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:text="检查内容"
+            android:textStyle="bold"
+            android:id="@+id/tv_check_content"
+            />
+
+
+
+        <TextView
+            style="@style/TextView_style"
+            android:layout_weight="2"
+            android:text="结论"
+            android:textStyle="bold"
+            android:id="@+id/rg_check_result"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView_style"
+                android:layout_weight="3"
+                android:padding="0dp"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_description"
+                android:text="不符合情况说明"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/lin_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title_picture"
+            style="@style/TextView_style"
+            android:layout_weight="3"
+            android:text="图片"
+            android:textStyle="bold"
+            />
+
+        <include
+            android:id="@+id/split_detil_picture"
+            layout="@layout/view_split_horizontal" />
+    </LinearLayout>
+    <include layout="@layout/view_split_vertical"/>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<include layout="@layout/view_split_horizontal"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_check_content"-->
+            <!--style="@style/TextView_style"-->
+            <!--android:text="检查内容"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--<include layout="@layout/view_split_horizontal"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/rg_check_result"-->
+            <!--android:text="结论"-->
+            <!--style="@style/TextView_style"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--<include layout="@layout/view_split_horizontal"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_description"-->
+            <!--android:text="不符合情况说明"-->
+            <!--style="@style/TextView_style"-->
+            <!--android:layout_weight="3"-->
+            <!--android:maxWidth="100dp"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--<include layout="@layout/view_split_horizontal"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title_picture"-->
+            <!--android:text="图片"-->
+            <!--style="@style/TextView_style"-->
+            <!--android:layout_weight="3"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--<include-->
+            <!--android:id="@+id/split_title_picture"-->
+            <!--layout="@layout/view_split_horizontal"/>-->
+    <!--</LinearLayout>-->
+    <!--<include layout="@layout/view_split_vertical"/>-->
+</LinearLayout>

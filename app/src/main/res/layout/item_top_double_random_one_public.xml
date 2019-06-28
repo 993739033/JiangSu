@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Layout_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style"
+                android:drawableLeft="@drawable/corporate_name"
+                android:drawablePadding="10dp"
+                android:text="企业名称" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_qy_name"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/bt_ercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/qr_code"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <View style="@style/Line_style" />
+
+    <LinearLayout style="@style/Layout_style">
+
+        <TextView
+            android:drawableRight="@drawable/required"
+            style="@style/TextView_style"
+            android:drawableLeft="@drawable/animal_species"
+            android:text="手动选择企业信息:" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_qy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/select_bg"
+            android:minHeight="36dp"
+            android:text="选择企业" />
+    </LinearLayout>
+
+    <View style="@style/Line_style" />
+
+    <LinearLayout style="@style/Layout_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style"
+                android:drawableLeft="@drawable/declarer"
+                android:drawablePadding="10dp"
+                android:text="负责人" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_fzr"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <View style="@style/Line_style" />
+
+    <LinearLayout style="@style/Layout_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style"
+                android:drawableLeft="@drawable/origin"
+                android:drawablePadding="10dp"
+                android:text="地址" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <View style="@style/Line_style" />
+
+    <LinearLayout style="@style/Layout_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style"
+                android:drawableLeft="@drawable/contact_way"
+                android:drawablePadding="10dp"
+                android:text="电  话" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditText_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

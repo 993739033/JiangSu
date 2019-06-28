@@ -1,0 +1,18 @@
+ 	/// <summary>
+    	/// 病死动物入库
+    	/// </summary>
+	
+	/// <summary>
+        /// 图片数组
+        /// </summary>
+        public string len { get; set; }
+
+        /// <summary>
+        /// 关联ID
+        /// </summary>
+        public int Glid { get; set; }
+
+        /// <summary>
+        /// 重量
+        /// </summary>
+        public decimal ZSL { get; set; }

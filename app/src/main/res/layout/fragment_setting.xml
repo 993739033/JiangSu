@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wyw.jiangsu.view.TScrollLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_user_info_show"
+                    style="@style/Layout_style"
+                    android:background="@drawable/layout_select"
+                    android:clickable="true">
+
+                    <TextView
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/userinfo"
+                        android:drawablePadding="10dp"
+                        android:text="用户信息" />
+
+                    <ImageView
+                        android:id="@+id/img_user_drop"
+                        style="@style/Image_style_relayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/setting_drop_down"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="510dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <View style="@style/Line_style" />
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/unit_grey"
+                            android:drawablePadding="10dp"
+                            android:text="单位"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_unit"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_1" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/account_grey"
+                            android:drawablePadding="10dp"
+                            android:text="账号"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_account"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_2" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_3"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/role_grey"
+                            android:drawablePadding="10dp"
+                            android:text="角色"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_role"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_3" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_4"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/name_grey"
+                            android:drawablePadding="10dp"
+                            android:text="姓名"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_4" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/sex_grey"
+                            android:drawablePadding="10dp"
+                            android:text="性别"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_sex"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_5" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_6"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/type_grey"
+                            android:drawablePadding="10dp"
+                            android:text="类型"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_6" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/Layout_style">
+
+                        <TextView
+                            android:id="@+id/tv_7"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/phone_grey"
+                            android:drawablePadding="10dp"
+                            android:text="手机"
+                            android:textColor="@color/gary1" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            style="@style/TextView_style_relayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tv_7" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_about_mnkj_show"
+                    style="@style/Layout_style"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_select"
+                    android:clickable="true">
+
+                    <TextView
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/aboatus"
+                        android:drawablePadding="10dp"
+                        android:text="关于我们" />
+
+                    <ImageView
+                        android:id="@+id/img_about_drop"
+                        style="@style/Image_style_relayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/setting_drop_down"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_about_mnkj"
+                    style="@style/Layout_style"
+                    android:layout_height="260dp"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:visibility="gone">
+
+                    <View style="@style/Line_style" />
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="苏动e通"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="苏动e通由铭农（上海）信息科技有限公司\n研发及运营" />
+
+                    <TextView
+                        android:id="@+id/mnkj_web"
+                        style="@style/TextView_style"
+                        android:layout_width="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="16dp"
+                        android:autoLink="web"
+                        android:drawableLeft="@drawable/pc"
+                        android:drawablePadding="5dp"
+                        android:text="www.miliotech.com"
+                        android:textIsSelectable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RLayout_print_show"
+                    style="@style/Layout_style"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_select"
+                    android:clickable="true">
+
+                    <TextView
+                        style="@style/TextView_style_relayout"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/aboatus"
+                        android:drawablePadding="10dp"
+                        android:text="打印机设置" />
+
+                    <ImageView
+                        android:id="@+id/img_print"
+                        style="@style/Image_style_relayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/setting_drop_down"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout_print"
+                    style="@style/Layout_style"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <View style="@style/Line_style" />
+
+                    <RadioGroup
+                        android:id="@+id/RG_print"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="28dp">
+
+                        <RadioButton
+                            android:id="@+id/epsonPrint"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton_selector"
+                            android:gravity="center_vertical"
+                            android:text="     EPSON打印机" />
+
+                        <RadioButton
+                            android:id="@+id/reMingPrint"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton_selector"
+                            android:gravity="center_vertical"
+                            android:text="     热敏打印机" />
+
+
+                        <RadioButton
+                            android:id="@+id/JQTEKreMingPrint"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton_selector"
+                            android:gravity="center_vertical"
+                            android:text="    JQTEK热敏打印机" />
+
+
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/huipuRint"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton_selector"
+                            android:gravity="center_vertical"
+                            android:text="     惠普打印机" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_update_apk"
+                style="@style/Layout_style"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_select"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/TextView_style_relayout"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/update"
+                    android:drawablePadding="10dp"
+                    android:text="检查更新" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_exit"
+                style="@style/Layout_style"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_select"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/TextView_style_relayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toRightOf="@+id/img_11"
+                    android:drawableLeft="@drawable/exit"
+                    android:drawablePadding="10dp"
+                    android:text="退出当前账号" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.wyw.jiangsu.view.TScrollLayout>
+
+</LinearLayout>

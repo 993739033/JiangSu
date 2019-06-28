@@ -1,0 +1,113 @@
+﻿ 表名称：V_AH_AEmbryoQuarantine
+
+ public int id
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 动物检疫合格证明编号
+        /// </summary>
+        public string code
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 生产单位名称地址
+        /// </summary>
+        public string scdz
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 地址
+        /// </summary>
+        public string dddz
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 目的地
+        /// </summary>
+        public string FhAdress
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 生产单位名称
+        /// </summary>
+        public string SCDWMC
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【省】
+        /// </summary>
+        public string rdddzxx
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【市】
+        /// </summary>
+        public string rdddzxx1
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【县】
+        /// </summary>
+        public string rdddzxx2
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 到达【乡】
+        /// </summary>
+        public string rdddzxx3
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 养殖场/产地
+        /// </summary>
+        public string farmsnme
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 动物种类
+        /// </summary>
+        public string animalsort
+        {
+            set;
+            get;
+        }
+
+
+        /// <summary>
+        /// 数量
+        /// </summary>
+        public int? animalnum
+        {
+            set;
+            get;
+        }
+        /// <summary>
+        /// 单位
+        /// </summary>
+        public string QCPDanWei
+        {
+            set;
+            get;
+        }

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <include layout="@layout/view_title" />
+
+    <com.wyw.jiangsu.view.CustomScrollView
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp"
+            >
+
+            <RelativeLayout style="@style/Layout_style">
+
+                <ImageView
+                    android:id="@+id/img_q"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/declarer" />
+
+                <TextView
+                    android:id="@+id/tv_q"
+                    style="@style/TextView_style_relayout"
+                    android:layout_toRightOf="@+id/img_q"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/required"
+                    android:text="消息发送人" />
+
+
+                <EditText
+                    android:id="@+id/et_xiaoxi_fasongren"
+                    style="@style/EditText_style_relayout"
+                    android:layout_toRightOf="@+id/tv_q"
+                    android:focusable="false" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/Line_style" />
+
+            <RelativeLayout
+                style="@style/Layout_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/img_7"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/declarer" />
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    style="@style/TextView_style_relayout"
+                    android:layout_marginRight="28dp"
+                    android:layout_toRightOf="@+id/img_7"
+                    android:drawableRight="@drawable/required"
+                    android:text="收集人" />
+
+                <TextView
+                    android:id="@+id/sp_shoujiren"
+                    style="@style/TextView_style_relayout"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tv_5"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/drop_down_drawable"
+                    android:gravity="right|center"
+                    android:text="请选择"
+                     />
+
+            </RelativeLayout>
+
+            <View style="@style/Line_style" />
+            <RelativeLayout style="@style/Layout_style">
+
+                <ImageView
+                    android:id="@+id/img_q_1"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/license_plate_number" />
+
+                <TextView
+                    android:id="@+id/tv_q_1"
+                    style="@style/TextView_style_relayout"
+                    android:layout_toRightOf="@+id/img_q_1"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/required"
+                    android:text="车牌号" />
+
+
+                <EditText
+                    android:id="@+id/et_chepai_hao"
+                    style="@style/EditText_style_relayout"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/tv_q_1"
+                    android:maxLength="20"
+                    android:layout_toLeftOf="@+id/sp_chepai_hao"
+                   />
+                <TextView
+                    android:id="@+id/sp_chepai_hao"
+                    style="@style/TextView_style_relayout"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/drop_down_drawable"
+                    android:gravity="right|center"
+                    android:text="请选择"
+                    />
+
+            </RelativeLayout>
+
+            <View style="@style/Line_style" />
+            <RelativeLayout style="@style/Layout_style">
+
+                <ImageView
+                    android:id="@+id/img_q_22"
+                    style="@style/Image_style_relayout"
+                    android:src="@drawable/collection_point" />
+
+                <TextView
+                    android:id="@+id/tv_q_22"
+                    style="@style/TextView_style_relayout"
+                    android:layout_toRightOf="@+id/img_q_22"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/required"
+                    android:text="收集点" />
+
+
+                <Button
+                    android:id="@+id/btn_xuanze"
+                    android:background="@drawable/select_bg"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:layout_width="120dp"
+                    android:textSize="14sp"
+                    android:layout_height="34dp"
+                    android:text="选择" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+            <include layout="@layout/whhchoose_item_layout"></include>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_shouji"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/img_18"
+                    android:text="带"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_17"
+                    android:background="@drawable/required" />
+
+                <TextView
+                    android:id="@+id/tv_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="14dp"
+                    android:text="为必填项"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_baocun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_style"
+                android:minHeight="40dp"
+                android:text="保存"
+                android:layout_margin="18dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </com.wyw.jiangsu.view.CustomScrollView>
+
+</LinearLayout>

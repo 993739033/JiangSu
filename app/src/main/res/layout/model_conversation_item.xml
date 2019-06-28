@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/Layout_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Image_style_relayout"
+            android:layout_gravity="left"
+            android:background="@drawable/question" />
+
+        <EditText
+            android:id="@+id/et_query"
+            android:layout_marginTop="5dp"
+            style="@style/EditText_style"
+            android:gravity="top|left"
+            android:hint="请输入提问内容"
+            android:layout_width="match_parent"
+            android:minHeight="80dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Image_style_relayout"
+            android:layout_gravity="right"
+            android:background="@drawable/answer" />
+
+        <EditText
+            android:hint="请输入回答内容"
+            android:id="@+id/et_response"
+            android:layout_marginTop="5dp"
+            style="@style/EditText_style"
+            android:gravity="top|left"
+            android:layout_width="match_parent"
+            android:minHeight="80dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

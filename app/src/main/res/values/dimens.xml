@@ -1,0 +1,66 @@
+<resources>
+    <dimen name="underline_top_spacing">8dp</dimen>
+    <dimen name="underline_bottom_spacing">4dp</dimen>
+    <dimen name="error_label_spacing">12dp</dimen>
+
+    <dimen name="floating_label_top_spacing">4dp</dimen>
+    <dimen name="floating_label_bottom_spacing">8dp</dimen>
+    <dimen name="floating_label_inside_spacing">12dp</dimen>
+
+    <dimen name="right_left_spinner_padding">8dp</dimen>
+
+    <dimen name="label_text_size">12sp</dimen>
+
+    <dimen name="min_content_height">20dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tv_stand_size">14sp</dimen>
+
+    <dimen name="common_padding_left">5dp</dimen>
+    <dimen name="common_padding_right">5dp</dimen>
+    <dimen name="common_padding_top">7dp</dimen>
+    <dimen name="common_padding_bottom">7dp</dimen>
+    <dimen name="common_edit_size">16sp</dimen>
+    <dimen name="common_text_size">16sp</dimen>
+    <dimen name="common_title_size">18sp</dimen>
+
+    <!--address dialog-->
+    <dimen name="dialog_title_wordsize">17sp</dimen>
+    <dimen name="dialog_title_padding">16.5dp</dimen>
+    <dimen name="dialog_tab_height">49dp</dimen>
+    <dimen name="dialog_viewpager_height">292dp</dimen>
+    <dimen name="dialog_tab_wordsize">14sp</dimen>
+    <dimen name="dialog_listview_padding">10.5dp</dimen>
+    <dimen name="dialog_listview_wordsize">14.5sp</dimen>
+
+
+    <!--登陆页面-->
+    <dimen name="w_height">150dp</dimen>
+    <dimen name="text_marginTop">30dp</dimen>
+    <dimen name="imgeView_height">91dp</dimen>
+    <dimen name="imgeView_marginTop">94dp</dimen>
+    <dimen name="LinerLayout_width">286dp</dimen>
+    <dimen name="LinerLayout_marginTop">244dp</dimen>
+    <dimen name="et_paddingBottom">18dp</dimen>
+    <dimen name="et2_paddingBottom">22dp</dimen>
+    <dimen name="et_height">66dp</dimen>
+    <dimen name="et_drawablePadding">16dp</dimen>
+    <dimen name="btn_width">286dp</dimen>
+    <dimen name="btn_height">49dp</dimen>
+    <dimen name="btn_maginTop">23dp</dimen>
+    <dimen name="btn_password_maginTop">8dp</dimen>
+
+
+    <!--入场查验登记查询列表-->
+    <dimen name="layout_margin">15dp</dimen>
+    <dimen name="view_height">2dp</dimen>
+    <dimen name="view_height_s">8dp</dimen>
+    <dimen name="linearLayout_buhege">68dp</dimen>
+    <dimen name="linearLayout_buhege_gao">100dp</dimen>
+    <dimen name="et_login_sp">18sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>
